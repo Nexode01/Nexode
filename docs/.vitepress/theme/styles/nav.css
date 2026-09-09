@@ -376,19 +376,40 @@
 
 /* Download is intentionally last in both locale navs. */
 .VPNavBarMenu .VPNavBarMenuLink:last-child {
+  position: relative;
+  overflow: hidden;
   margin-left: 6px;
   padding: 0 15px;
-  border: 1px solid var(--nimote-border-accent);
-  background: var(--nimote-action);
-  box-shadow: 0 1px 2px rgba(8, 9, 10, 0.12);
+  border: 1px solid transparent;
+  background: var(--nimote-gradient-vivid);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.22),
+    0 1px 2px rgba(8, 9, 10, 0.16);
   color: var(--nimote-on-action);
 }
-
+.VPNavBarMenu .VPNavBarMenuLink:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -70%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-18deg);
+  transition: left 0.55s var(--nimote-ease);
+  pointer-events: none;
+}
 .VPNavBarMenu .VPNavBarMenuLink:last-child:hover {
-  background: var(--nimote-action-hover);
-  box-shadow: 0 4px 12px rgba(var(--nimote-accent-rgb), 0.18);
+  background: var(--nimote-gradient-vivid);
+  filter: brightness(1.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    0 4px 14px rgba(var(--nimote-accent-rgb), 0.28);
   color: var(--nimote-on-action);
   transform: translateY(-1px);
+}
+.VPNavBarMenu .VPNavBarMenuLink:last-child:hover::after {
+  left: 130%;
 }
 
 /* Search and utility controls ------------------------------------------ */

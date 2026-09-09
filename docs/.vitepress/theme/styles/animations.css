@@ -25,6 +25,16 @@
   }
 }
 
+@keyframes nimote-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .VPHero,
 .vp-doc {
   animation: nimote-fade-up 0.7s var(--nimote-ease-out) both;

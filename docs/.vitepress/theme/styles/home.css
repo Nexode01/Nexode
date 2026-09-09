@@ -105,7 +105,7 @@
   align-items: center;
   gap: 0;
   min-height: 570px;
-  padding: 70px clamp(20px, 3vw, 42px) 64px;
+  padding: 70px clamp(20px, 3vw, 42px) 56px;
 }
 
 /* Hero text stays on the same contrast scale as the rest of the page. */
@@ -138,6 +138,11 @@
   max-width: 590px;
   padding: 0;
 }
+
+/* Hero device mockup — the hand-built app mockup lives in its own standalone
+   component file `components/AppMockup.vue`, including its own layout, glow and
+   float animation. It is intentionally NOT referenced by the homepage right now;
+   see `docs/index.md` for the commented-out mount point. */
 
 /* Eyebrows / labels — uppercase kept only as a short hierarchy marker. */
 .home-page-badge,
@@ -418,7 +423,7 @@ html:not(.dark) .home-page-feature-icon {
 .home-page-feature-grid {
   display: grid;
   gap: 18px;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .home-page-feature-grid-priority {
@@ -461,7 +466,7 @@ html:not(.dark) .home-page-feature-icon {
 /* Demo — single centred portrait player with a small description beneath */
 .home-page-demo-media {
   width: min(100%, 520px);
-  margin: 44px auto 0;
+  margin: 36px auto 0;
 }
 
 .home-page-demo-video {
@@ -499,12 +504,13 @@ html:not(.dark) .home-page-feature-icon {
   letter-spacing: 0.01em;
 }
 
-/* Community links */
+/* Community links — sits on the same plain canvas as every other section so
+   the page reads as one continuous surface. */
 .home-page-community-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .home-page-community-card {
@@ -682,7 +688,8 @@ html:not(.dark) .home-page-feature-card-ai::after {
   .home-page-pillar-icon,
   .home-page-video-shell,
   .home-page-community-card,
-  .home-page-community-cta span {
+  .home-page-community-cta span,
+  [data-reveal] {
     animation: none !important;
     transition: none !important;
   }
@@ -771,7 +778,7 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
       linear-gradient(90deg, rgba(var(--nimote-bg-rgb), 0.42), rgba(var(--nimote-bg-rgb), 0.18));
   }
 
-  .home-page-hero-shell.home-page-hero-shell-product { gap: 36px; padding: 46px 18px 52px; }
+  .home-page-hero-shell.home-page-hero-shell-product { gap: 36px; padding: 46px 18px 44px; }
   .home-page-title { font-size: clamp(2.35rem, 11vw, 3.25rem); }
   .home-page-subtitle { margin-top: 18px; font-size: 0.98rem; }
   .home-page-actions-hero { width: 100%; }
@@ -807,7 +814,7 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
     /* Keep sufficient vertical runway so the availability link remains
        distinct from the Product Demo section below. */
     min-height: 620px;
-    padding: 80px var(--nimote-home-gutter) 72px;
+    padding: 80px var(--nimote-home-gutter) 60px;
   }
 
   .home-page-hero-copy {
@@ -1005,7 +1012,56 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   box-shadow: var(--nimote-panel-shadow-hover);
 }
 .home-page-pillar-accent {
-  border-color: rgba(var(--nimote-accent-rgb), 0.2);
+  position: relative;
+  border: 1px solid rgba(165, 180, 252, 0.18);
+  background:
+    radial-gradient(ellipse 120% 70% at 110% -10%, rgba(139, 92, 246, 0.38), transparent 52%),
+    radial-gradient(ellipse 80% 60% at -20% 110%, rgba(99, 102, 241, 0.3), transparent 55%),
+    linear-gradient(155deg, #1e1b4b 0%, #2a2a7a 55%, #3b3491 100%);
+  box-shadow: 0 20px 44px rgba(37, 32, 102, 0.32);
+}
+.home-page-pillar-accent:hover {
+  border-color: rgba(165, 180, 252, 0.32);
+  box-shadow: 0 26px 54px rgba(37, 32, 102, 0.4);
+}
+/* The AI pillar is the page's one dark, gradient moment. Every child needs an
+   explicit light-on-indigo override so the panel reads as a deliberate hero. */
+.home-page-pillars .home-page-pillar-accent .home-page-eyebrow {
+  border-color: rgba(199, 210, 254, 0.22);
+  background: rgba(199, 210, 254, 0.08);
+  color: #c7d2fe;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-title {
+  color: #f5f7ff;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-copy {
+  color: #c7d2fe;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-flow {
+  border-color: rgba(199, 210, 254, 0.24);
+  background: rgba(199, 210, 254, 0.1);
+  color: #e0e7ff;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-points li {
+  border-color: rgba(199, 210, 254, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #dbe3ff;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-link {
+  color: #a5b4fc;
+}
+.home-page-pillars .home-page-pillar-accent:hover .home-page-pillar-link {
+  color: #c7d2fe;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-cap-grid li {
+  border-color: rgba(199, 210, 254, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e6eaff;
+}
+.home-page-pillars .home-page-pillar-accent .home-page-cap-icon {
+  border-color: rgba(199, 210, 254, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #e0e7ff;
 }
 /* Pillar head — icon and label on the same line. */
 .home-page-pillar-head {
@@ -1031,10 +1087,13 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   width: 22px;
   height: 22px;
 }
-.home-page-pillar-accent .home-page-pillar-icon {
-  border-color: rgba(var(--nimote-accent-rgb), 0.28);
-  background: rgba(var(--nimote-accent-rgb), 0.06);
-  color: var(--nimote-accent);
+.home-page-pillars .home-page-pillar-accent .home-page-pillar-icon {
+  border-color: rgba(199, 210, 254, 0.24);
+  background: rgba(199, 210, 254, 0.1);
+  color: #e0e7ff;
+}
+.home-page-pillars .home-page-pillar-accent:hover .home-page-pillar-icon {
+  color: #ffffff;
 }
 .home-page-pillar:hover .home-page-pillar-icon {
   color: var(--nimote-accent);
@@ -1156,9 +1215,14 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
 .home-page-compare-wrap {
   display: block;
   width: 100%;
-  margin: 40px auto 0;
+  margin: 32px auto 0;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-lg);
+  background: var(--nimote-card);
+  box-shadow: var(--nimote-shadow-sm);
+  scrollbar-width: thin;
 }
 /* Override VitePress .vp-doc table defaults (display:block, border-collapse:separate,
    zebra row backgrounds, cell borders) so the comparison table lays out as a real,
@@ -1290,4 +1354,51 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   .home-page-trust {
     grid-template-columns: 1fr;
   }
+}
+
+/* ==========================================================================
+   Motion
+   - Scroll reveal (gated on html.js so content stays visible without JS)
+   - Button sheen sweep
+   - Staggered reveal delays for sibling grids
+   ========================================================================== */
+
+[data-reveal] {
+  transition:
+    opacity 0.6s var(--nimote-ease-out),
+    transform 0.6s var(--nimote-ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+html.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+}
+html.js [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+html.js [data-reveal]:nth-child(2) { --reveal-delay: 80ms; }
+html.js [data-reveal]:nth-child(3) { --reveal-delay: 160ms; }
+html.js [data-reveal]:nth-child(4) { --reveal-delay: 240ms; }
+html.js [data-reveal]:nth-child(5) { --reveal-delay: 320ms; }
+
+/* Primary CTA sheen — a light sweep across the button on hover. */
+.home-page-btn.primary {
+  position: relative;
+  overflow: hidden;
+}
+.home-page-btn.primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -70%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(105deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-18deg);
+  transition: left 0.55s var(--nimote-ease);
+  pointer-events: none;
+}
+.home-page-btn.primary:hover::after {
+  left: 130%;
 }

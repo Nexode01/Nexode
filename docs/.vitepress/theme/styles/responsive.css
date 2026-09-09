@@ -49,8 +49,8 @@
 @media (max-width: 768px) {
   :root {
     --nimote-nav-height: 56px;
-    --nimote-section-space: 64px;
-    --nimote-section-space-compact: 48px;
+    --nimote-section-space: 48px;
+    --nimote-section-space-compact: 36px;
   }
 
   .VPNav,
@@ -78,7 +78,7 @@
       linear-gradient(90deg, rgba(var(--nimote-bg-rgb), 0.3) 0%, rgba(var(--nimote-bg-rgb), 0.08) 28%, rgba(var(--nimote-bg-rgb), 0.08) 72%, rgba(var(--nimote-bg-rgb), 0.34) 100%);
   }
   .home-page-hero-shell {
-    padding: 26px 16px 84px;
+    padding: 26px 16px 60px;
     gap: 16px;
     align-content: end;
   }
@@ -220,7 +220,7 @@
 
 @media (max-width: 560px) {
   :root {
-    --nimote-section-space: 56px;
+    --nimote-section-space: 40px;
   }
 
   .home-page-hero {
@@ -230,7 +230,7 @@
     background-position: center top;
   }
   .home-page-hero-shell {
-    padding: 24px 16px 76px;
+    padding: 24px 16px 56px;
     gap: 14px;
   }
   .home-page-title {
@@ -252,7 +252,7 @@
 
 @media (max-width: 420px) {
   .home-page-hero-shell {
-    padding: 22px 12px 64px;
+    padding: 22px 12px 48px;
     gap: 16px;
   }
   .home-page-title {

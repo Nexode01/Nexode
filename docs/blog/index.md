@@ -18,6 +18,7 @@ Practical guides and engineering notes on coding from a phone — over SSH, with
 <div class="product-card-grid blog-index-cards">
   <a class="product-card" href="/blog/can-an-ai-agent-really-code-from-a-phone"><strong>Can an AI Agent Really Code From a Phone?</strong><span>A real AI Agent demo inside NimoteCode: plan a task, create and edit code, run commands, verify results and commit from a phone over SSH.</span></a>
   <a class="product-card" href="/blog/tailscale-ssh-android-mac-linux"><strong>How to Use Android as a Remote IDE with Tailscale and NimoteCode</strong><span>Free SSH access to Mac and Linux without a public IP address or router port forwarding.</span></a>
+  <a class="product-card" href="/compare/mobile-ai-development-tools"><strong>Compare Mobile IDEs and AI Coding Tools</strong><span>How NimoteCode, Termius, Blink, Redock, Orca, ServerCC and Moshi differ on SSH, editing, Git and AI agents.</span></a>
 </div>
 
 ## Mobile Coding

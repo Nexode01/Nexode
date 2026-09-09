@@ -146,6 +146,7 @@ That is the gap NimoteCode was built for. It is available for Android now, with 
 
 - [Mobile IDE overview](/mobile-ide) — the workspace NimoteCode is built around
 - [Android IDE for SSH, Git and AI Coding](/android-ide) — a real mobile IDE beyond a terminal
+- [Compare mobile IDEs and AI coding tools](/compare/mobile-ai-development-tools) — a neutral feature comparison across the category
 - [How to Use Android as a Remote IDE with Tailscale](/blog/tailscale-ssh-android-mac-linux) — secure SSH access without port forwarding
 
 <div class="seo-cta">

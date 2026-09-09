@@ -1310,6 +1310,31 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   text-align: center;
 }
 
+/* Capability strip — an explicit hierarchy of the seven core areas. */
+.home-page-strip-section {
+  padding-top: var(--nimote-section-space-compact);
+}
+.home-page-cap-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 900px;
+  margin: 28px auto 0;
+  padding: 0;
+  list-style: none;
+}
+.home-page-cap-strip li {
+  padding: 9px 16px;
+  border: 1px solid var(--nimote-border);
+  border-radius: var(--nimote-radius-pill);
+  background: var(--nimote-bg-elevated);
+  color: var(--nimote-text-primary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
 /* Section-level CTA centred beneath the use-case grid. */
 .home-page-section-cta {
   display: flex;

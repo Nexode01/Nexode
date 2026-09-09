@@ -3,6 +3,7 @@ import { existsSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 import { product, productCopy } from './theme/product'
+import { allCompetitors } from './theme/data/mobileDevelopmentCompetitors'
 
 const siteUrl = 'https://nimotecode.com'
 const brandLogo = `${siteUrl}/app_icon.png`
@@ -195,6 +196,11 @@ function pageSchemas(context: TransformContext): object[] {
     schemas.push(breadcrumb)
   }
 
+  const compareList = compareItemListSchema(context)
+  if (compareList) {
+    schemas.push(compareList)
+  }
+
   const faq = faqSchema(context)
   if (faq) {
     schemas.push(faq)
@@ -239,6 +245,23 @@ function videoSchema(context: TransformContext): object | null {
         url: brandLogo
       }
     }
+  }
+}
+
+function compareItemListSchema(context: TransformContext): object | null {
+  const normalized = normalizePath(context.pageData.relativePath)
+  if (!/^\/(?:zh\/)?compare\/mobile-ai-development-tools$/.test(normalized)) return null
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Mobile development tools compared',
+    itemListElement: allCompetitors.map((competitor, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: competitor.name,
+      url: competitor.website
+    }))
   }
 }
 
@@ -706,6 +729,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Product', link: '/features' },
+          { text: 'Compare', link: '/compare/mobile-ai-development-tools' },
           { text: 'Workflows', link: '/use-cases/' },
           { text: 'Docs', link: '/docs/quick-start' },
           { text: 'Mobile Developer Lab', link: '/blog/' },
@@ -803,6 +827,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '产品', link: '/zh/features' },
+          { text: '对比', link: '/zh/compare/mobile-ai-development-tools' },
           { text: '工作流', link: '/zh/use-cases/' },
           { text: '文档', link: '/zh/docs/quick-start' },
           { text: '移动开发实验室', link: '/zh/blog/' },

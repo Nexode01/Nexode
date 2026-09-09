@@ -1,19 +1,19 @@
 ---
 layout: home
-title: NimoteCode – Mobile AI Development Workspace for SSH & Remote Coding
+title: NimoteCode – A Real Mobile IDE for Remote Development
 titleTemplate: false
-description: "NimoteCode is a mobile AI development workspace for remote coding, SSH, terminal, Git and AI coding agents on Android, with iOS availability on the download page."
+description: "NimoteCode is a real mobile IDE for remote development: Editor, Explorer, SSH, Terminal, Git, Preview and AI Agent for mobile coding on Android, with iOS availability on the download page."
 ---
 
 <section class="home-page-hero">
   <div class="home-page-hero-shell home-page-hero-shell-product">
     <div class="home-page-hero-copy">
-      <p class="home-page-badge">Mobile AI Development Workspace</p>
+      <p class="home-page-badge">Mobile Development Workspace</p>
       <div class="home-page-logo-lockup"><img src="/app_icon.png" alt="NimoteCode" class="home-page-logo" width="1024" height="1024" decoding="async"><span class="home-page-brand">NimoteCode</span></div>
-      <h1 class="home-page-title">Code from your phone.<br><em>On your real development machine.</em></h1>
-      <p class="home-page-subtitle">NimoteCode is a mobile AI development workspace for remote coding, SSH, terminal, Git and AI coding agents. Available on Android, with iOS availability shown on the download page.</p>
+      <h1 class="home-page-title">A real mobile IDE for<br><em>remote development.</em></h1>
+      <p class="home-page-subtitle">Editor, Explorer, SSH, Terminal, Git, Preview and AI Agent — built for real development on phones and tablets.</p>
       <div class="home-page-actions home-page-actions-hero">
-        <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">Download for Android</a>
+        <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">Download NimoteCode</a>
         <a href="#product-demo" class="home-page-btn secondary">Watch Demo</a>
         <a href="https://github.com/mobiledevloperlab" class="home-page-btn secondary home-page-btn-weak" target="_blank" rel="noreferrer">View on GitHub</a>
       </div>
@@ -44,50 +44,66 @@ description: "NimoteCode is a mobile AI development workspace for remote coding,
     <div class="home-page-trust-item" data-reveal><span class="home-page-trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l1.7 4.5 4.5 1.7-4.5 1.7-1.7 4.5-1.7-4.5-4.5-1.7 4.5-1.7 1.7-4.5z"/><path d="M19.4 2.6l.9 2.4 2.4.9-2.4.9-.9 2.4-.9-2.4-2.4-.9 2.4-.9.9-2.4z"/></svg></span>AI Chat &amp; Agent</div>
   </div>
 </section>
+<section class="home-page-section home-page-strip-section">
+  <div class="home-page-section-head home-page-section-head-centered" data-reveal>
+    <p class="home-page-eyebrow">Everything in one workspace</p>
+    <h2 class="home-page-section-title">From remote workspace to AI, in one mobile IDE.</h2>
+    <p class="home-page-section-copy">NimoteCode is not just a remote terminal or an AI-agent companion. It is a mobile development workspace where you can inspect code, edit files, run commands, review Git changes and continue working when an agent needs human judgment.</p>
+  </div>
+  <ul class="home-page-cap-strip" data-reveal>
+    <li>Remote Workspace</li>
+    <li>Real Code Editor</li>
+    <li>Terminal &amp; SSH</li>
+    <li>Git Workflow</li>
+    <li>AI Chat &amp; Agent</li>
+    <li>Preview</li>
+    <li>LSP / Debugging</li>
+  </ul>
+</section>
 <section class="home-page-section home-page-pillars-section">
   <div class="home-page-pillars">
-    <article class="home-page-pillar" data-reveal>
+    <article class="home-page-pillar home-page-pillar-accent" data-reveal>
       <div class="home-page-pillar-head">
         <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2.5"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 9.5c2.8-2.2 7.2-2.2 10 0"/></svg></span>
-        <p class="home-page-eyebrow">Remote Development</p>
+        <p class="home-page-eyebrow">Remote Workspace</p>
       </div>
       <h2 class="home-page-pillar-title">Your development machine, anywhere.</h2>
-      <p class="home-page-pillar-copy">Work on the same project from your phone or tablet over SSH.</p>
+      <p class="home-page-pillar-copy">Open the real project on your Mac, Linux box or server over SSH — with a real code editor on your phone or tablet.</p>
       <ul class="home-page-pillar-points">
         <li>Remote files</li>
-        <li>Integrated terminal</li>
-        <li>Secure SSH</li>
+        <li>Code editor</li>
+        <li>Web preview</li>
       </ul>
       <a href="/ssh-ide" class="home-page-pillar-link">Explore Remote Development <span aria-hidden="true">→</span></a>
     </article>
-    <article class="home-page-pillar home-page-pillar-accent" data-reveal>
+    <article class="home-page-pillar" data-reveal>
       <div class="home-page-pillar-head">
-        <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.7L19.7 10.5l-5.8 1.8L12 18l-1.9-5.7L4.3 10.5l5.8-1.8L12 3z"/><path d="M19 15l.6 1.9 1.9.6-1.9.6L19 20l-.6-1.9-1.9-.6 1.9-.6L19 15z"/></svg></span>
-        <p class="home-page-eyebrow">AI Coding</p>
+        <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M6.5 9.5l3 3-3 3"/><path d="M13 15.5h4"/></svg></span>
+        <p class="home-page-eyebrow">Terminal &amp; SSH</p>
       </div>
-      <h2 class="home-page-pillar-title">AI coding without leaving your workspace.</h2>
-      <p class="home-page-pillar-copy">Chat, agents and terminal AI tools with full project context.</p>
-      <p class="home-page-pillar-flow">Inspect → Plan → Execute → Verify</p>
+      <h2 class="home-page-pillar-title">Run commands where the project lives.</h2>
+      <p class="home-page-pillar-copy">A terminal, secure SSH and reconnect-aware sessions in the same workspace as the code.</p>
       <ul class="home-page-pillar-points">
-        <li>AI Chat &amp; Agent</li>
-        <li>Review before applying</li>
+        <li>Integrated terminal</li>
+        <li>Secure SSH</li>
+        <li>Persistent sessions</li>
       </ul>
-      <a href="/mobile-ai-coding" class="home-page-pillar-link">Explore Mobile AI Coding <span aria-hidden="true">→</span></a>
+      <a href="/docs/terminal" class="home-page-pillar-link">Explore Terminal &amp; SSH <span aria-hidden="true">→</span></a>
     </article>
     <article class="home-page-pillar" data-reveal>
       <div class="home-page-pillar-head">
         <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span>
-        <p class="home-page-eyebrow">Complete Mobile IDE</p>
+        <p class="home-page-eyebrow">Git, AI &amp; Diagnostics</p>
       </div>
-      <h2 class="home-page-pillar-title">More than an SSH terminal.</h2>
-      <p class="home-page-pillar-copy">Files, editor, terminal, Git and debugging in one workspace.</p>
+      <h2 class="home-page-pillar-title">Review changes, get help, debug.</h2>
+      <p class="home-page-pillar-copy">Review Git diffs, work with AI Chat and Agent, and use LSP, debugging and preview without leaving the workspace.</p>
       <ul class="home-page-cap-grid">
-        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18"/><path d="M3 12h18"/><path d="M3 17h18"/></svg></span>Explorer</li>
-        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 7.5 4.5 12l4 4.5"/><path d="M15.5 7.5 19.5 12l-4 4.5"/></svg></span>Editor</li>
-        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M6.5 9.5l3 3-3 3"/><path d="M13 15.5h4"/></svg></span>Terminal</li>
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2.3"/><circle cx="6" cy="19" r="2.3"/><circle cx="18" cy="7" r="2.3"/><path d="M6 7.3v9.4"/><path d="M8.4 6.1c3 .4 5.1 2 6.6 4.3.8 1.3 1.5 2 2.9 2.2"/></svg></span>Git</li>
+        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.7L19.7 10.5l-5.8 1.8L12 18l-1.9-5.7L4.3 10.5l5.8-1.8L12 3z"/></svg></span>AI Chat &amp; Agent</li>
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5h4l2-5 4 15 2-5h6"/></svg></span>LSP</li>
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></svg></span>Debug</li>
+        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18"/></svg></span>Preview</li>
+        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h13"/></svg></span>Tasks</li>
       </ul>
       <a href="/features" class="home-page-pillar-link">Explore All Features <span aria-hidden="true">→</span></a>
     </article>
@@ -97,27 +113,11 @@ description: "NimoteCode is a mobile AI development workspace for remote coding,
   <div class="home-page-section-head home-page-section-head-centered" data-reveal>
     <p class="home-page-eyebrow">Why NimoteCode</p>
     <h2 class="home-page-section-title">More than a remote terminal.</h2>
-    <p class="home-page-section-copy">The most-used mobile SSH clients and terminals are built around running commands. NimoteCode is built around the development workflow around those commands.</p>
+    <p class="home-page-section-copy">Some mobile developer tools focus on SSH access. Others focus on monitoring AI coding agents. NimoteCode brings the editor, remote workspace, Terminal, Git, Preview and AI workflow together in one mobile development environment.</p>
   </div>
-  <div class="home-page-compare-wrap" data-reveal>
-    <table class="home-page-compare">
-      <thead>
-        <tr><th scope="col">Capability</th><th scope="col" class="home-page-compare-col-nimote">NimoteCode</th><th scope="col">Termius</th><th scope="col">Blink Shell</th><th scope="col">JuiceSSH</th><th scope="col">Shelldium</th><th scope="col">ConnectBot</th></tr>
-      </thead>
-      <tbody>
-        <tr><th scope="row">SSH connection</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr>
-        <tr><th scope="row">Terminal</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td></tr>
-        <tr><th scope="row">Project Explorer</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="home-page-compare-partial">Partial</td><td class="home-page-compare-partial">Partial</td><td class="home-page-compare-partial">Partial</td><td class="home-page-compare-partial">Partial</td><td class="home-page-compare-partial">Partial</td></tr>
-        <tr><th scope="row">Code Editor</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-        <tr><th scope="row">Web Preview</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-        <tr><th scope="row">Git Review</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-        <tr><th scope="row">AI Chat &amp; Agent</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="home-page-compare-partial">Partial</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-        <tr><th scope="row">LSP</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-        <tr><th scope="row">Debugging</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">Yes</span></td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-      </tbody>
-    </table>
+  <div class="home-page-section-cta" data-reveal>
+    <a href="/compare/mobile-ai-development-tools" class="home-page-btn primary">Compare mobile development tools <span aria-hidden="true">→</span></a>
   </div>
-  <p class="home-page-compare-caption">NimoteCode is a development workspace; the others are SSH clients and terminals. Some clients offer limited file browsing or AI command assistance, but none bundle an editor, Git review, LSP, debugger and AI agent in the same project workspace.</p>
 </section>
 <section class="home-page-section home-page-use-case-section">
   <div class="home-page-section-head home-page-section-head-centered" data-reveal>

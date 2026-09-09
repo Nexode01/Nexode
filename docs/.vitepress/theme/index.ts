@@ -6,6 +6,7 @@ import MarketingLayout from './MarketingLayout.vue'
 // 暂时不上线：App 界面 mockup（代码保留在 ./components/AppMockup.vue）
 // import AppMockup from './components/AppMockup.vue'
 import ImagePlaceholder from './components/ImagePlaceholder.vue'
+import MobileDevToolComparison from './components/MobileDevToolComparison.vue'
 import PricingFeatureSystem from './components/PricingFeatureSystem.vue'
 import SocialProof from './components/SocialProof.vue'
 import { type Theme } from 'vitepress'
@@ -20,6 +21,7 @@ const theme: Theme = {
   enhanceApp({ app }) {
     // app.component('AppMockup', AppMockup) // 暂时不上线
     app.component('ImagePlaceholder', ImagePlaceholder)
+    app.component('MobileDevToolComparison', MobileDevToolComparison)
     app.component('PricingFeatureSystem', PricingFeatureSystem)
     app.component('SocialProof', SocialProof)
     app.component('MarketingLayout', MarketingLayout)

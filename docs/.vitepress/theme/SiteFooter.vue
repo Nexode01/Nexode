@@ -34,6 +34,7 @@ const copy = computed(() => isChinese.value ? {
   note: '为开发者的移动时刻而构建。',
   exploreLinks: [
     { text: '移动 IDE', href: '/mobile-ide' },
+    { text: '工具对比', href: '/compare/mobile-ai-development-tools' },
     { text: 'Android IDE', href: '/android-ide' },
     { text: 'SSH IDE', href: '/ssh-ide' },
     { text: '远程编程', href: '/remote-coding' },
@@ -65,6 +66,7 @@ const copy = computed(() => isChinese.value ? {
   note: 'Built for developers on the move.',
   exploreLinks: [
     { text: 'Mobile IDE', href: '/mobile-ide' },
+    { text: 'Compare Tools', href: '/compare/mobile-ai-development-tools' },
     { text: 'Android IDE', href: '/android-ide' },
     { text: 'SSH IDE', href: '/ssh-ide' },
     { text: 'Remote Coding', href: '/remote-coding' },

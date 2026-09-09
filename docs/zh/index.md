@@ -1,18 +1,18 @@
 ---
 layout: home
-title: NimoteCode | 面向 SSH 与远程编码的移动 AI 开发工作台
+title: NimoteCode | 面向远程开发的真实移动 IDE
 titleTemplate: false
-description: NimoteCode 是面向远程编码、SSH、终端、Git 与 AI 编码代理的移动 AI 开发工作台，适用于 Android；iOS 可用性见下载页。
+description: NimoteCode 是面向远程开发的真实移动 IDE：Editor、Explorer、SSH、Terminal、Git、Preview 与 AI Agent，适用于 Android；iOS 可用性见下载页。
 ---
 
 <section class="home-page-hero">
   <div class="home-page-hero-shell home-page-hero-shell-product">
     <div class="home-page-hero-copy">
-      <p class="home-page-badge">移动 AI 开发工作台</p>
+      <p class="home-page-badge">移动开发工作区</p>
       <div class="home-page-logo-lockup"><img src="/app_icon.png" alt="NimoteCode" class="home-page-logo" width="1024" height="1024" decoding="async"><span class="home-page-brand">NimoteCode</span></div>
-      <h1 class="home-page-title">用手机写代码，<br><em>在你的真实开发机器上。</em></h1>
-      <p class="home-page-subtitle">NimoteCode 是面向远程编码、SSH、终端、Git 与 AI 编码代理的移动 AI 开发工作台。Android 现已可用，iOS 可用性见下载页。</p>
-      <div class="home-page-actions home-page-actions-hero"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 Android 版</a><a href="#product-demo" class="home-page-btn secondary">观看演示</a><a href="https://github.com/mobiledevloperlab" class="home-page-btn secondary home-page-btn-weak" target="_blank" rel="noreferrer">查看 GitHub</a></div>
+      <h1 class="home-page-title">面向远程开发的<br><em>真实移动 IDE。</em></h1>
+      <p class="home-page-subtitle">Editor、Explorer、SSH、Terminal、Git、Preview 与 AI Agent —— 为手机和平板上的真实开发而打造。</p>
+      <div class="home-page-actions home-page-actions-hero"><a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">下载 NimoteCode</a><a href="#product-demo" class="home-page-btn secondary">观看演示</a><a href="https://github.com/mobiledevloperlab" class="home-page-btn secondary home-page-btn-weak" target="_blank" rel="noreferrer">查看 GitHub</a></div>
       <a class="home-page-availability-link" href="/zh/download?utm_source=zh_homepage&utm_medium=website&utm_campaign=ios_availability">iOS 正在 App Store 审核上架中，了解可用性 <span aria-hidden="true">→</span></a>
     </div>
   </div>
@@ -38,50 +38,66 @@ description: NimoteCode 是面向远程编码、SSH、终端、Git 与 AI 编码
     <div class="home-page-trust-item"><span class="home-page-trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l1.7 4.5 4.5 1.7-4.5 1.7-1.7 4.5-1.7-4.5-4.5-1.7 4.5-1.7 1.7-4.5z"/><path d="M19.4 2.6l.9 2.4 2.4.9-2.4.9-.9 2.4-.9-2.4-2.4-.9 2.4-.9.9-2.4z"/></svg></span>AI Chat 与 Agent</div>
   </div>
 </section>
+<section class="home-page-section home-page-strip-section">
+  <div class="home-page-section-head home-page-section-head-centered">
+    <p class="home-page-eyebrow">一个工作区，全部能力</p>
+    <h2 class="home-page-section-title">从远程工作区到 AI，都在一个移动 IDE 里。</h2>
+    <p class="home-page-section-copy">NimoteCode 不只是一个远程终端，也不只是 AI Agent 的配套。它是一套移动开发工作区：你可以检查代码、编辑文件、运行命令、审查 Git 改动，并在 Agent 需要人来判断时继续接手。</p>
+  </div>
+  <ul class="home-page-cap-strip">
+    <li>远程工作区</li>
+    <li>真实代码编辑器</li>
+    <li>终端与 SSH</li>
+    <li>Git 工作流</li>
+    <li>AI Chat 与 Agent</li>
+    <li>预览</li>
+    <li>LSP / 调试</li>
+  </ul>
+</section>
 <section class="home-page-section home-page-pillars-section">
   <div class="home-page-pillars">
-    <article class="home-page-pillar">
+    <article class="home-page-pillar home-page-pillar-accent">
       <div class="home-page-pillar-head">
         <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2.5"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 9.5c2.8-2.2 7.2-2.2 10 0"/></svg></span>
-        <p class="home-page-eyebrow">远程开发</p>
+        <p class="home-page-eyebrow">远程工作区</p>
       </div>
       <h2 class="home-page-pillar-title">你的开发机器，随处可用。</h2>
-      <p class="home-page-pillar-copy">通过 SSH 在手机或平板上使用同一个项目开发。</p>
+      <p class="home-page-pillar-copy">通过 SSH 在手机或平板上打开 Mac、Linux 机器或服务器上的真实项目——并配有真实的代码编辑器。</p>
       <ul class="home-page-pillar-points">
         <li>远程文件</li>
-        <li>内置终端</li>
-        <li>安全 SSH</li>
+        <li>代码编辑器</li>
+        <li>Web 预览</li>
       </ul>
       <a href="/zh/ssh-ide" class="home-page-pillar-link">了解远程开发 <span aria-hidden="true">→</span></a>
     </article>
-    <article class="home-page-pillar home-page-pillar-accent">
+    <article class="home-page-pillar">
       <div class="home-page-pillar-head">
-        <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.7L19.7 10.5l-5.8 1.8L12 18l-1.9-5.7L4.3 10.5l5.8-1.8L12 3z"/><path d="M19 15l.6 1.9 1.9.6-1.9.6L19 20l-.6-1.9-1.9-.6 1.9-.6L19 15z"/></svg></span>
-        <p class="home-page-eyebrow">AI 编码</p>
+        <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M6.5 9.5l3 3-3 3"/><path d="M13 15.5h4"/></svg></span>
+        <p class="home-page-eyebrow">终端与 SSH</p>
       </div>
-      <h2 class="home-page-pillar-title">AI 编码，无需离开工作区。</h2>
-      <p class="home-page-pillar-copy">Chat、Agent 与终端 AI 工具，完整项目上下文。</p>
-      <p class="home-page-pillar-flow">检查 → 规划 → 执行 → 验证</p>
+      <h2 class="home-page-pillar-title">在项目所在之处运行命令。</h2>
+      <p class="home-page-pillar-copy">终端、安全 SSH 与断线感知会话，与代码在同一个工作区。</p>
       <ul class="home-page-pillar-points">
-        <li>AI Chat 与 Agent</li>
-        <li>应用前先审查</li>
+        <li>内置终端</li>
+        <li>安全 SSH</li>
+        <li>持久会话</li>
       </ul>
-      <a href="/zh/mobile-ai-coding" class="home-page-pillar-link">了解移动 AI 编码 <span aria-hidden="true">→</span></a>
+      <a href="/zh/docs/terminal" class="home-page-pillar-link">了解终端与 SSH <span aria-hidden="true">→</span></a>
     </article>
     <article class="home-page-pillar">
       <div class="home-page-pillar-head">
         <span class="home-page-pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span>
-        <p class="home-page-eyebrow">完整移动 IDE</p>
+        <p class="home-page-eyebrow">Git、AI 与诊断</p>
       </div>
-      <h2 class="home-page-pillar-title">不止是一个 SSH 终端。</h2>
-      <p class="home-page-pillar-copy">文件、编辑器、终端、Git 与调试，都在一个工作区。</p>
+      <h2 class="home-page-pillar-title">审查改动、获取帮助、调试。</h2>
+      <p class="home-page-pillar-copy">在同一工作区审查 Git diff、使用 AI Chat 与 Agent，以及 LSP、调试和预览。</p>
       <ul class="home-page-cap-grid">
-        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18"/><path d="M3 12h18"/><path d="M3 17h18"/></svg></span>Explorer</li>
-        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 7.5 4.5 12l4 4.5"/><path d="M15.5 7.5 19.5 12l-4 4.5"/></svg></span>编辑器</li>
-        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M6.5 9.5l3 3-3 3"/><path d="M13 15.5h4"/></svg></span>终端</li>
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2.3"/><circle cx="6" cy="19" r="2.3"/><circle cx="18" cy="7" r="2.3"/><path d="M6 7.3v9.4"/><path d="M8.4 6.1c3 .4 5.1 2 6.6 4.3.8 1.3 1.5 2 2.9 2.2"/></svg></span>Git</li>
+        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.7L19.7 10.5l-5.8 1.8L12 18l-1.9-5.7L4.3 10.5l5.8-1.8L12 3z"/></svg></span>AI Chat 与 Agent</li>
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5h4l2-5 4 15 2-5h6"/></svg></span>LSP</li>
         <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7l-5 5 5 5"/><path d="M15 7l5 5-5 5"/></svg></span>调试</li>
+        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18"/></svg></span>预览</li>
+        <li><span class="home-page-cap-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h13"/></svg></span>Tasks</li>
       </ul>
       <a href="/zh/features" class="home-page-pillar-link">了解全部功能 <span aria-hidden="true">→</span></a>
     </article>
@@ -91,27 +107,11 @@ description: NimoteCode 是面向远程编码、SSH、终端、Git 与 AI 编码
   <div class="home-page-section-head home-page-section-head-centered">
     <p class="home-page-eyebrow">为什么选 NimoteCode</p>
     <h2 class="home-page-section-title">不止是一个远程终端。</h2>
-    <p class="home-page-section-copy">最常用的移动端 SSH 客户端和终端围绕"运行命令"设计。NimoteCode 则围绕这些命令所构成的开发工作流来设计。</p>
+    <p class="home-page-section-copy">有些移动开发工具专注于 SSH 访问，有些专注于监控 AI 编码 Agent。NimoteCode 把编辑器、远程工作区、终端、Git、预览与 AI 工作流整合到同一个移动开发环境中。</p>
   </div>
-  <div class="home-page-compare-wrap">
-    <table class="home-page-compare">
-      <thead>
-        <tr><th scope="col">能力</th><th scope="col" class="home-page-compare-col-nimote">NimoteCode</th><th scope="col">Termius</th><th scope="col">Blink Shell</th><th scope="col">JuiceSSH</th><th scope="col">Shelldium</th><th scope="col">ConnectBot</th></tr>
-      </thead>
-      <tbody>
-        <tr><th scope="row">SSH 连接</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td></tr>
-        <tr><th scope="row">终端</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td></tr>
-        <tr><th scope="row">项目资源管理器</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td class="home-page-compare-partial">部分</td><td class="home-page-compare-partial">部分</td><td class="home-page-compare-partial">部分</td><td class="home-page-compare-partial">部分</td><td class="home-page-compare-partial">部分</td></tr>
-        <tr><th scope="row">代码编辑器</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-        <tr><th scope="row">Web 预览</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-        <tr><th scope="row">Git 审查</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-        <tr><th scope="row">AI Chat 与 Agent</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td class="home-page-compare-partial">部分</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-        <tr><th scope="row">LSP</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-        <tr><th scope="row">调试</th><td class="home-page-compare-col-nimote"><span aria-hidden="true">✓</span><span class="sr-only">支持</span></td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td><td class="home-page-compare-none">—</td></tr>
-      </tbody>
-    </table>
+  <div class="home-page-section-cta">
+    <a href="/zh/compare/mobile-ai-development-tools" class="home-page-btn primary">对比移动开发工具 <span aria-hidden="true">→</span></a>
   </div>
-  <p class="home-page-compare-caption">NimoteCode 是一个开发工作区,其余都是 SSH 客户端与终端。部分客户端提供有限的文件浏览或 AI 命令辅助,但没有一个把编辑器、Git 审查、LSP、调试器与 AI Agent 整合进同一个项目工作区。</p>
 </section>
 <section class="home-page-section home-page-use-case-section">
   <div class="home-page-section-head home-page-section-head-centered">

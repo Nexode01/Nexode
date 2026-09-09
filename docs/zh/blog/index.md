@@ -18,6 +18,7 @@ description: "来自 NimoteCode 团队的移动编程、AI 编程、远程开发
 <div class="product-card-grid blog-index-cards">
   <a class="product-card" href="/zh/blog/can-an-ai-agent-really-code-from-a-phone"><strong>AI Agent 真的能在手机上编程吗？</strong><span>NimoteCode 内的一次真实 AI Agent 演示：规划、编写、运行、验证并提交改动。</span></a>
   <a class="product-card" href="/zh/blog/tailscale-ssh-android-mac-linux"><strong>如何用 Tailscale 和 NimoteCode 把 Android 用作远程 IDE</strong><span>无需公网 IP 或端口映射，免费 SSH 访问 Mac 与 Linux。</span></a>
+  <a class="product-card" href="/zh/compare/mobile-ai-development-tools"><strong>对比移动 IDE 与 AI 编码工具</strong><span>NimoteCode、Termius、Blink、Redock、Orca、ServerCC 与 Moshi 在 SSH、编辑、Git 与 AI Agent 上的差异。</span></a>
 </div>
 
 ## 移动编程

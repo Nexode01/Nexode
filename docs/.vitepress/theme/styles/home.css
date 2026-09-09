@@ -1314,7 +1314,10 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
 .home-page-strip-section {
   padding-top: var(--nimote-section-space-compact);
 }
-.home-page-cap-strip {
+/* Scoped with .home-page-section so it outranks VitePress's `.vp-doc ul`
+   (which sets `margin: 12px 0` and `padding-left: 1.4rem`). Without this the
+   strip loses its auto margins and is left-aligned instead of centred. */
+.home-page-section .home-page-cap-strip {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1324,7 +1327,8 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   padding: 0;
   list-style: none;
 }
-.home-page-cap-strip li {
+.home-page-section .home-page-cap-strip li {
+  margin: 0;
   padding: 9px 16px;
   border: 1px solid var(--nimote-border);
   border-radius: var(--nimote-radius-pill);
@@ -1333,6 +1337,10 @@ html:not(.dark) .home-page-hero .home-page-subtitle {
   font-size: 0.88rem;
   font-weight: 500;
   line-height: 1;
+  list-style: none;
+}
+.home-page-section .home-page-cap-strip li::marker {
+  content: none;
 }
 
 /* Section-level CTA centred beneath the use-case grid. */

@@ -15,8 +15,6 @@
  * - When public documentation does not confirm a capability, use `unknown`
  *   instead of asserting it is unsupported.
  */
-import { product } from '../product'
-
 export type Locale = 'en' | 'zh'
 export type Localized = Record<Locale, string>
 export type CellStatus = 'yes' | 'partial' | 'no' | 'unknown'
@@ -46,7 +44,6 @@ export type FeatureKey =
   | 'webAppPreview'
   | 'desktopCompanionRequired'
   | 'openSource'
-  | 'pricingModel'
 
 export interface FeatureRow {
   key: FeatureKey
@@ -68,7 +65,6 @@ export interface Competitor {
   primaryPositioning: Localized
   summary: Localized
   platforms: Localized
-  pricing: Localized
   openSource: Localized
   features: Record<FeatureKey, FeatureCell>
   sources: SourceLink[]
@@ -100,8 +96,7 @@ export const featureRows: FeatureRow[] = [
     kind: 'info',
     label: { en: 'Desktop Companion Required', zh: '是否需要桌面端配合' }
   },
-  { key: 'openSource', kind: 'info', label: { en: 'Open Source', zh: '开源' } },
-  { key: 'pricingModel', kind: 'info', label: { en: 'Pricing Model', zh: '定价模式' } }
+  { key: 'openSource', kind: 'info', label: { en: 'Open Source', zh: '开源' } }
 ]
 
 const yes = (note?: Localized): FeatureCell => ({ status: 'yes', note })
@@ -169,10 +164,6 @@ export const competitors: Competitor[] = [
       zh: '面向希望手机或平板本身就能充当完整开发工作区的开发者，将代码编辑、SSH、终端、Git、LSP、调试与 AI 工作流结合在一起。'
     },
     platforms: { en: 'Android (iOS in App Store review)', zh: 'Android（iOS 审核中）' },
-    pricing: {
-      en: `Free tier; ${product.trialDays}-day Pro trial; ${product.pricing.monthly} or ${product.pricing.yearly}. AI is BYOK.`,
-      zh: `免费版；${product.trialDays} 天 Pro 试用；${product.pricing.monthly} 或 ${product.pricing.yearly}。AI 为 BYOK。`
-    },
     openSource: { en: 'No — closed source', zh: '否——闭源' },
     features: {
       platform: info('Android (iOS in review)', 'Android（iOS 审核中）'),
@@ -189,11 +180,7 @@ export const competitors: Competitor[] = [
       persistentSessions: yes({ en: 'Reconnect-aware SSH', zh: '断线感知 SSH' }),
       webAppPreview: yes(),
       desktopCompanionRequired: info('No', '否'),
-      openSource: info('No — closed source', '否——闭源'),
-      pricingModel: info(
-        `Free + Pro (${product.pricing.monthly} / ${product.pricing.yearly})`,
-        `免费 + Pro（${product.pricing.monthly} / ${product.pricing.yearly}）`
-      )
+      openSource: info('No — closed source', '否——闭源')
     },
     sources: [
       { label: 'NimoteCode website', url: 'https://nimotecode.com/' },
@@ -216,7 +203,6 @@ export const competitors: Competitor[] = [
       zh: '最适合主要需要成熟 SSH、SFTP 与远程服务器管理体验的开发者和基础设施团队。'
     },
     platforms: { en: 'iOS / Android / Desktop', zh: 'iOS / Android / 桌面端' },
-    pricing: { en: 'Free tier; paid plans (see vendor pricing)', zh: '免费版；付费方案（见官网定价）' },
     openSource: { en: 'No — proprietary', zh: '否——专有软件' },
     features: {
       platform: info('iOS / Android / Desktop', 'iOS / Android / 桌面端'),
@@ -233,8 +219,7 @@ export const competitors: Competitor[] = [
       persistentSessions: unknown({ en: 'Not confirmed', zh: '未确认' }),
       webAppPreview: no(),
       desktopCompanionRequired: info('No', '否'),
-      openSource: info('No — proprietary', '否——专有软件'),
-      pricingModel: info('Free + paid plans', '免费 + 付费方案')
+      openSource: info('No — proprietary', '否——专有软件')
     },
     sources: [
       { label: 'Termius website', url: 'https://termius.com/' },
@@ -254,7 +239,6 @@ export const competitors: Competitor[] = [
       zh: '适合偏好终端优先工作流、Mosh 与远程 VS Code 环境的 iPhone 和 iPad 用户。'
     },
     platforms: { en: 'iOS / iPadOS', zh: 'iOS / iPadOS' },
-    pricing: { en: 'Paid app (see vendor)', zh: '付费应用（见官网）' },
     openSource: { en: 'Yes', zh: '是' },
     features: {
       platform: info('iOS / iPadOS', 'iOS / iPadOS'),
@@ -271,8 +255,7 @@ export const competitors: Competitor[] = [
       persistentSessions: partial({ en: 'Mosh roaming', zh: 'Mosh 漫游' }),
       webAppPreview: no(),
       desktopCompanionRequired: info('No', '否'),
-      openSource: info('Yes', '是'),
-      pricingModel: info('Paid app', '付费应用')
+      openSource: info('Yes', '是')
     },
     sources: [
       { label: 'Blink Shell website', url: 'https://blink.sh/' },
@@ -296,7 +279,6 @@ export const competitors: Competitor[] = [
       zh: '围绕 AI 编码 Agent 的移动 SSH / Mosh 工作流设计，提供 tmux 持久化、Agent 感知界面与 Web 预览。'
     },
     platforms: { en: 'iOS / Android', zh: 'iOS / Android' },
-    pricing: { en: 'See vendor site', zh: '见官网' },
     openSource: { en: 'Not confirmed', zh: '未确认' },
     features: {
       platform: info('iOS / Android', 'iOS / Android'),
@@ -313,8 +295,7 @@ export const competitors: Competitor[] = [
       persistentSessions: yes({ en: 'tmux', zh: 'tmux' }),
       webAppPreview: yes(),
       desktopCompanionRequired: info('No', '否'),
-      openSource: info('Not confirmed', '未确认'),
-      pricingModel: info('See vendor site', '见官网')
+      openSource: info('Not confirmed', '未确认')
     },
     sources: [
       { label: 'Redock website', url: 'https://redock.dev/' },
@@ -344,7 +325,6 @@ export const competitors: Competitor[] = [
       zh: '面向在主机侧开发环境中编排多个编码 Agent 与 worktree，并提供用于监控和控制的移动端配套。'
     },
     platforms: { en: 'Desktop + mobile companion', zh: '桌面端 + 移动端配套' },
-    pricing: { en: 'Open source; see vendor site', zh: '开源；见官网' },
     openSource: { en: 'Yes — MIT', zh: '是——MIT' },
     features: {
       platform: info('Desktop + mobile companion', '桌面端 + 移动端配套'),
@@ -361,8 +341,7 @@ export const competitors: Competitor[] = [
       persistentSessions: unknown({ en: 'Not confirmed', zh: '未确认' }),
       webAppPreview: yes({ en: 'Browser preview', zh: '浏览器预览' }),
       desktopCompanionRequired: info('Yes — host-centered', '是——以主机为核心'),
-      openSource: info('Yes — MIT', '是——MIT'),
-      pricingModel: info('Open source; see vendor site', '开源；见官网')
+      openSource: info('Yes — MIT', '是——MIT')
     },
     sources: [
       { label: 'Orca website', url: 'https://www.onorca.dev/' },
@@ -383,7 +362,6 @@ export const competitors: Competitor[] = [
       zh: '专注于基于 SSH 的移动编码 Agent 工作流，提供持久会话、Git Diff、内置 Tailscale 与低门槛沙盒体验。'
     },
     platforms: { en: 'iOS / Android', zh: 'iOS / Android' },
-    pricing: { en: 'See vendor site', zh: '见官网' },
     openSource: { en: 'Not confirmed', zh: '未确认' },
     features: {
       platform: info('iOS / Android', 'iOS / Android'),
@@ -400,8 +378,7 @@ export const competitors: Competitor[] = [
       persistentSessions: yes({ en: 'tmux', zh: 'tmux' }),
       webAppPreview: yes({ en: 'Ports / preview', zh: '端口 / 预览' }),
       desktopCompanionRequired: info('No', '否'),
-      openSource: info('Not confirmed', '未确认'),
-      pricingModel: info('See vendor site', '见官网')
+      openSource: info('Not confirmed', '未确认')
     },
     sources: [
       { label: 'ServerCC website', url: 'https://servercc.app/' },
@@ -422,7 +399,6 @@ export const competitors: Competitor[] = [
       zh: '面向 Claude Code、Codex 及其他 CLI 编码 Agent 优化的 Agent 感知 SSH / Mosh 终端。'
     },
     platforms: { en: 'iOS / Android', zh: 'iOS / Android' },
-    pricing: { en: 'See vendor site', zh: '见官网' },
     openSource: { en: 'Not confirmed', zh: '未确认' },
     features: {
       platform: info('iOS / Android', 'iOS / Android'),
@@ -439,8 +415,7 @@ export const competitors: Competitor[] = [
       persistentSessions: yes({ en: 'tmux', zh: 'tmux' }),
       webAppPreview: yes({ en: 'Browser preview', zh: '浏览器预览' }),
       desktopCompanionRequired: info('No', '否'),
-      openSource: info('Not confirmed', '未确认'),
-      pricingModel: info('See vendor site', '见官网')
+      openSource: info('Not confirmed', '未确认')
     },
     sources: [
       { label: 'Moshi website', url: 'https://getmoshi.app/' },
@@ -471,7 +446,7 @@ export const comparisonCopy = {
     sourcesIntro:
       'This section lists official or first-party sources. Links open in a new tab and are marked nofollow.',
     disclaimer:
-      'Feature availability, pricing and platform support change frequently. This comparison was last reviewed on September 9, 2026 and is based on publicly available vendor documentation, official websites and app-store listings.',
+      'Feature availability and platform support change frequently. This comparison was last reviewed on September 9, 2026 and is based on publicly available vendor documentation, official websites and app-store listings.',
     verifiedLabel: 'Last verified',
     midCtaTitle: 'Need more than a terminal?',
     midCtaBody:
@@ -498,7 +473,7 @@ export const comparisonCopy = {
     sourcesHeading: '来源 / 数据来源',
     sourcesIntro: '仅列出官方或一手来源。链接在新标签页打开，并标记为 nofollow。',
     disclaimer:
-      '功能、价格和平台支持可能随版本变化。本对比最后核实于 2026 年 9 月 9 日，信息来源于各产品官方网站、官方文档及应用商店公开信息。',
+      '功能和平台支持可能随版本变化。本对比最后核实于 2026 年 9 月 9 日，信息来源于各产品官方网站、官方文档及应用商店公开信息。',
     verifiedLabel: '最后核实',
     midCtaTitle: '需要的不止是终端？',
     midCtaBody: '体验集代码编辑、SSH、Git、终端与 AI 于一体的完整移动开发工作区。',

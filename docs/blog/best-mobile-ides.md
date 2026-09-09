@@ -3,7 +3,7 @@ title: "The Best Mobile IDEs in 2026: What to Look For (and How NimoteCode Fits)
 description: "Coding from a phone is practical in 2026 — but only when the tool behaves like a workspace, not a terminal or an editor in isolation. A practical guide to the mobile IDE landscape, what separates a real mobile IDE from SSH clients, web code servers and editor-only apps, and where NimoteCode fits."
 author: "NimoteCode Team"
 date: "2026-09-09"
-lastUpdated: "2026-09-09"
+lastUpdated: "2026-09-10"
 tags: ["mobile ide", "ssh", "ai agent", "mobile development", "2026"]
 image: /blog/best-mobile-ides/image-1.png
 ---
@@ -78,7 +78,7 @@ These are the criteria we used while building NimoteCode, and they are a fair ch
 
 ## Where NimoteCode fits
 
-NimoteCode is a mobile AI development workspace for Android and iOS that treats local and remote projects as the same kind of workspace:
+NimoteCode is a mobile AI development workspace for Android (the iOS release is in App Store review) that treats local and remote projects as the same kind of workspace:
 
 - **Local and SSH workspaces** — open a folder on your device, or connect to a Mac or Linux project over SSH with your own secure networking
 - **Code editor on mobile** — keyboard-friendly editing with split panes for two files side by side, built for phones and refined for tablets
@@ -104,21 +104,21 @@ The design goal is boring in the best way: the workspace should feel like a norm
 
 ### SSH clients and terminals, compared
 
-The category table above groups tools by how they behave. Within the terminal-first group, the commonly used clients are Termius, Blink Shell, JuiceSSH, Shelldium and ConnectBot. This is how they compare with NimoteCode on the capabilities that separate a remote session from project work:
+The category table above groups tools by how they behave. Within the terminal-first group, widely used and currently maintained options include Termius, Blink Shell, ConnectBot (open source) and Termux (open source). This is how they compare with NimoteCode on the capabilities that separate a remote session from project work:
 
-| Capability | NimoteCode | Termius | Blink Shell | JuiceSSH | Shelldium | ConnectBot |
-| --- | --- | --- | --- | --- | --- | --- |
-| SSH connection | Yes | Yes | Yes | Yes | Yes | Yes |
-| Terminal | Yes | Yes | Yes | Yes | Yes | Yes |
-| Project explorer | Yes | Partial | Partial | Partial | Partial | Partial |
-| Code editor | Yes | No | No | No | No | No |
-| Web preview | Yes | No | No | No | No | No |
-| Git review | Yes | No | No | No | No | No |
-| AI chat and agent | Yes | Partial | No | No | No | No |
-| LSP | Yes | No | No | No | No | No |
-| Debugging | Yes | No | No | No | No | No |
+| Capability | NimoteCode | Termius | Blink Shell | ConnectBot | Termux |
+| --- | --- | --- | --- | --- | --- |
+| SSH connection | Yes | Yes (SSH + Mosh) | Yes (SSH + Mosh) | Yes | Yes (OpenSSH package) |
+| Terminal | Yes | Yes | Yes | Yes | Yes |
+| Project explorer | Yes | Partial (SFTP) | Partial (`scp` / `sftp`) | No | Partial (CLI tools) |
+| Code editor | Yes | No | Partial (Blink Code) | No | No (CLI editors) |
+| Web preview | Yes | No | No | No | No |
+| Git review | Yes | Partial (terminal) | Partial (terminal) | No | Partial (CLI) |
+| AI chat and agent | Yes | Partial | No | No | No |
+| LSP | Yes | No | No | No | No |
+| Debugging | Yes | No | No | No | No |
 
-All six handle SSH connections and command sessions. Where a client offers more, it is limited — basic file management or an AI assistant, never a project workspace. The editor, Git review, LSP, debugger and agent that NimoteCode keeps next to the files are not part of any of the five.
+All five handle SSH connections and command sessions. Where a client offers more, it is limited — basic file management, a light editor or an AI assistant, never a project workspace. The editor, Git review, LSP, debugger and agent that NimoteCode keeps next to the files are not part of the other four.
 
 ## Realistic scenarios
 

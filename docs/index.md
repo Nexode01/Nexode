@@ -1,8 +1,8 @@
 ---
 layout: home
-title: NimoteCode – A Real Mobile IDE for Remote Development
+title: NimoteCode – Mobile SSH IDE & AI Coding Workspace
 titleTemplate: false
-description: "NimoteCode is a real mobile IDE for remote development: Editor, Explorer, SSH, Terminal, Git, Preview and AI Agent for mobile coding on Android, with iOS availability on the download page."
+description: "NimoteCode is a mobile SSH IDE for remote development: Editor, Explorer, SSH terminal, Git, Preview and AI Agent for mobile coding on Android, with iOS availability on the download page."
 ---
 
 <section class="home-page-hero">
@@ -10,7 +10,7 @@ description: "NimoteCode is a real mobile IDE for remote development: Editor, Ex
     <div class="home-page-hero-copy">
       <p class="home-page-badge">Mobile Development Workspace</p>
       <div class="home-page-logo-lockup"><img src="/app_icon.png" alt="NimoteCode" class="home-page-logo" width="1024" height="1024" decoding="async"><span class="home-page-brand">NimoteCode</span></div>
-      <h1 class="home-page-title">A real mobile IDE for<br><em>remote development.</em></h1>
+      <h1 class="home-page-title">A real mobile SSH IDE for<br><em>remote development.</em></h1>
       <p class="home-page-subtitle">Editor, Explorer, SSH, Terminal, Git, Preview and AI Agent — built for real development on phones and tablets.</p>
       <div class="home-page-actions home-page-actions-hero">
         <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=website&utm_campaign=homepage_hero" class="home-page-btn primary" target="_blank" rel="noreferrer">Download NimoteCode</a>
@@ -168,7 +168,7 @@ description: "NimoteCode is a real mobile IDE for remote development: Editor, Ex
     <p class="home-page-section-copy">Practical write-ups on coding from a phone, remote development and AI workflows.</p>
   </div>
   <div class="home-page-guide-grid">
-    <a href="/blog/best-mobile-ides" class="home-page-guide-card" data-reveal><span>MOBILE IDE</span><h3>The Best Mobile IDEs in 2026</h3><p>What separates a real mobile workspace from SSH clients and editor-only apps.</p></a>
+    <a href="/blog/best-ssh-clients" class="home-page-guide-card" data-reveal><span>SSH CLIENTS</span><h3>Best SSH Clients in 2026</h3><p>Android, mobile, terminal and desktop SSH clients compared — and how to choose by the work, not the shell.</p></a>
     <a href="/blog/can-an-ai-agent-really-code-from-a-phone" class="home-page-guide-card" data-reveal><span>AI CODING</span><h3>Can an AI Agent Really Code From a Phone?</h3><p>Plan, edit, run and commit real changes from a phone over SSH.</p></a>
     <a href="/blog/tailscale-ssh-android-mac-linux" class="home-page-guide-card" data-reveal><span>REMOTE DEVELOPMENT</span><h3>Android as a Remote IDE with Tailscale</h3><p>Free SSH access to Mac and Linux without a public IP or port forwarding.</p></a>
   </div>

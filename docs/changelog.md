@@ -11,11 +11,11 @@ This is the public record of notable product updates. For setup help, use the [d
 
 ## 2026
 
-### Version 1.1.5 · September 6, 2026
+### Version 1.1.6 · September 9, 2026
 
-This release adds in-app web preview, split editor panes, built-in media viewing, and a richer AI workspace. It also substantially improves SSH reliability, mobile terminal input, Git workflows, memory use, and interface consistency.
+This release makes getting started clearer with first-launch onboarding, defaults the editor to a code-oriented monospace font, refines subscription and theme presentation, and fixes editor, in-app browser, Git status, and iOS keyboard-input issues.
 
-[Read the complete 1.1.5 release notes →](/releases/)
+[Read the complete 1.1.6 release notes →](/releases/)
 
 ### Current release channel
 

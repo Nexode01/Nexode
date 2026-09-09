@@ -162,7 +162,7 @@ description: NimoteCode 是面向远程开发的真实移动 IDE：Editor、Expl
     <p class="home-page-section-copy">关于用手机写代码、远程开发与 AI 工作流的实用文章。</p>
   </div>
   <div class="home-page-guide-grid">
-    <a href="/zh/blog/best-mobile-ides" class="home-page-guide-card"><span>移动 IDE</span><h3>2026 年最好的移动 IDE</h3><p>真正的移动工作区与 SSH 客户端、纯编辑器应用之间的区别。</p></a>
+      <a href="/zh/blog/best-ssh-clients" class="home-page-guide-card"><span>SSH 客户端</span><h3>开发者最佳 SSH 客户端</h3><p>终端还是移动工作区——按工作选，而不是按 shell 选。</p></a>
     <a href="/zh/blog/can-an-ai-agent-really-code-from-a-phone" class="home-page-guide-card"><span>AI 编程</span><h3>AI Agent 真的能在手机上编程吗？</h3><p>通过 SSH 在手机上规划、编辑、运行并提交真实改动。</p></a>
     <a href="/zh/blog/tailscale-ssh-android-mac-linux" class="home-page-guide-card"><span>远程开发</span><h3>用 Tailscale 把 Android 用作远程 IDE</h3><p>无需公网 IP 或端口映射，免费 SSH 访问 Mac 与 Linux。</p></a>
   </div>

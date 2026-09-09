@@ -52,3 +52,7 @@ The current release makes more of the development loop visible without leaving t
 5. Use [Source Control](/docs/source-control) to review the result; Pro is required when the delivery step needs a gated Git write action.
 
 > Features are deliberately permission- and environment-aware. For example, LSP and Debug depend on the language server or debug adapter being set up on the remote host, and AI output should be reviewed before use on sensitive systems.
+
+## Explore the SSH workflow
+
+If you are evaluating how these features fit an SSH session, see the [Android SSH client](/android-ssh-client) workflow, compare [SSH clients](/blog/best-ssh-clients), or read the [SSH IDE overview](/ssh-ide) for the full remote development loop.

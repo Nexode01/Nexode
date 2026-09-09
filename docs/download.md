@@ -32,4 +32,4 @@ NimoteCode lets you open a local or SSH project, edit files side by side, previe
 
 Free includes local and SSH workspaces, editor, baseline terminal, Git review, AI Chat and Tasks. AI Agent and remote content search are available during the 14-day, per-device Pro trial and with Pro. Pro is $3.99/month or $39.99/year and also adds Git write workflows, multi-terminal, LSP, Debug and Sync / Cache. AI is BYOK: your provider account controls model access and billing.
 
-After installation, continue with [Quick Start](/docs/quick-start), [SSH Workspace](/docs/ssh), or [Mobile IDE](/mobile-ide).
+After installation, continue with [Quick Start](/docs/quick-start), [SSH Workspace](/docs/ssh), or [Mobile IDE](/mobile-ide). If you are choosing a tool rather than setting one up, start with the [Android SSH client](/android-ssh-client) page or the [best SSH clients](/blog/best-ssh-clients) comparison.

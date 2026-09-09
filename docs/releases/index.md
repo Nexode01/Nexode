@@ -7,6 +7,28 @@ description: Complete release notes for NimoteCode, including new features, impr
 
 This page contains the complete public release history. Android is the current public release channel; iPhone and iPad availability will be announced on the [Download page](/download).
 
+## 1.1.6 · September 9, 2026
+
+This release makes getting started clearer and resolves several editor, browser, source-control, and iOS input issues.
+
+### New
+
+- **First-launch onboarding.** New users now receive a guided introduction to the core workspace before starting their first project.
+
+### Improved
+
+- **Monospace editor by default.** New editor settings now prioritize a code-oriented font from the start.
+- **Clearer subscription information.** Subscription disclosures are tailored to the platform where the app is running.
+- **Cohesive theme surfaces.** All bundled themes now use more restrained chrome, panel, and editor surface steps for a calmer IDE workspace.
+- **Live theme updates.** Onboarding and the empty editor workspace now repaint immediately after a theme change.
+
+### Fixed
+
+- Restored Git status decorations in the Explorer.
+- Resolved editor and in-app browser regressions.
+- Prevented a false “Unable to open link” notice when a website opens successfully in the in-app browser sheet.
+- Prevented duplicate iOS keyboard clients, improving keyboard and text-input reliability.
+
 ## 1.1.5 · September 6, 2026
 
 This release completes more of the mobile development loop: open two files side by side, preview a web app, review Git changes, and keep Terminal and AI work dependable throughout a long session.

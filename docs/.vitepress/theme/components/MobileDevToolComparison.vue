@@ -37,8 +37,6 @@ function cellFor(product: Competitor, row: FeatureRow): FeatureCell {
       return { status: 'no', text: product.platforms }
     case 'openSource':
       return { status: 'no', text: product.openSource }
-    case 'pricingModel':
-      return { status: 'no', text: product.pricing }
     default:
       return product.features[row.key]
   }

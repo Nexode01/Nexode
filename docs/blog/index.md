@@ -1,5 +1,5 @@
 ---
-title: "Blog | NimoteCode"
+title: "Mobile SSH, Remote Development & AI Coding | NimoteCode Blog"
 description: "Mobile coding, AI coding, remote development and build-log essays from the NimoteCode team."
 ---
 
@@ -10,7 +10,7 @@ Practical guides and engineering notes on coding from a phone — over SSH, with
 ## Featured Article
 
 <div class="product-card-grid blog-index-cards">
-  <a class="product-card product-card-featured" href="/blog/best-mobile-ides"><strong>The Best Mobile IDEs in 2026: What to Look For (and How NimoteCode Fits)</strong><span>A practical guide to the mobile IDE landscape — SSH clients, cloud IDEs, editor-only apps and full mobile workspaces. Start here for an overview of the category.</span></a>
+  <a class="product-card product-card-featured" href="/blog/best-ssh-clients"><strong>Best SSH Clients in 2026: Android, Mobile &amp; Desktop Compared</strong><span>Terminal-first tools vs developer-oriented clients — Termius, Blink Shell, ConnectBot, Termux, OpenSSH, PuTTY and NimoteCode. Start here to choose an SSH client by the work, not the shell.</span></a>
 </div>
 
 ## Latest Guides

@@ -70,6 +70,8 @@ NimoteCode is currently available for Android. The public iOS App Store release 
 ## Explore related workflows
 
 - [SSH IDE for remote development](/ssh-ide)
+- [Android SSH client](/android-ssh-client)
 - [Mobile AI coding](/mobile-ai-coding)
 - [iPad coding workspace](/ipad-coding)
+- [Best SSH clients in 2026](/blog/best-ssh-clients)
 - [The Best Mobile IDEs in 2026](/blog/best-mobile-ides)

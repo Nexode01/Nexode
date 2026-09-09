@@ -100,56 +100,65 @@ function pageSchemas(context: TransformContext): object[] {
   const title = asContent(context.pageData.frontmatter.title, asContent(context.pageData.title, 'NimoteCode'))
   const description = pageDescription(context, title)
   const inLanguage = languageForPath(context.pageData.relativePath)
-
-  const schemas: object[] = [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-      name: 'NimoteCode',
-      url: siteUrl,
-      logo: brandLogo,
-      sameAs: [
-        'https://github.com/mobiledevloperlab',
-        'https://x.com/mobiledevlab'
-      ]
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: 'NimoteCode',
-      url: siteUrl,
-      description: websiteDescription(inLanguage),
-      inLanguage
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      name: title,
-      description,
-      url,
-      inLanguage
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: 'NimoteCode',
-      applicationCategory: 'DeveloperApplication',
-      operatingSystem: 'Android',
-      url: siteUrl,
-      image: socialImage,
-      description: 'Mobile AI development workspace with code editor, SSH terminal, Git, AI Chat and Agent, LSP, debugger, tasks and sync/cache.',
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'USD',
-        availability: 'https://schema.org/InStock',
-        category: 'Freemium'
-      }
-    }
-  ]
-
   const normalizedPath = normalizePath(context.pageData.relativePath)
-  if (normalizedPath !== '/') {
+  const isHome = normalizedPath === '/'
+
+  const schemas: object[] = []
+
+  // Site-wide identity nodes are declared once, on the homepage. Repeating
+  // Organization/WebSite/SoftwareApplication on every route adds no signal and
+  // makes the graph harder to read, so other pages only carry their own WebPage.
+  if (isHome) {
+    schemas.push(
+      {
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'NimoteCode',
+        url: siteUrl,
+        logo: brandLogo,
+        sameAs: [
+          'https://github.com/mobiledevloperlab',
+          'https://x.com/mobiledevlab'
+        ]
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'NimoteCode',
+        url: siteUrl,
+        description: websiteDescription(inLanguage),
+        inLanguage
+      },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'SoftwareApplication',
+        name: 'NimoteCode',
+        applicationCategory: 'DeveloperApplication',
+        operatingSystem: 'Android',
+        url: siteUrl,
+        image: socialImage,
+        description: 'Mobile SSH IDE and AI development workspace with code editor, SSH terminal, Git, AI Chat and Agent, LSP, debugger, tasks and sync/cache.',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
+          category: 'Freemium'
+        }
+      }
+    )
+  }
+
+  schemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: title,
+    description,
+    url,
+    inLanguage
+  })
+
+  if (!isHome) {
     const isBlogPost = normalizedPath.startsWith('/blog/') && normalizedPath !== '/blog/'
     const datePublished = asContent(context.pageData.frontmatter.date, '')
     const dateModified = asContent(context.pageData.frontmatter.lastUpdated, datePublished)
@@ -385,6 +394,66 @@ function faqSchema(context: TransformContext): object | null {
       {
         question: 'When is an SSH IDE better than a terminal-only client?',
         answer: 'Choose an SSH IDE when the task includes locating files, editing code, running verification commands and reviewing a diff. A terminal-only client may be enough for command-only work.'
+      }
+    ],
+    '/blog/best-ssh-clients': [
+      {
+        question: 'What is the best SSH client for Android?',
+        answer: 'There is no single answer. For command-line work, ConnectBot and Termux are free, open-source options. For a development workflow that includes files, editing, terminal and Git, NimoteCode is an Android SSH client built for that broader job.'
+      },
+      {
+        question: 'What is the best mobile SSH client?',
+        answer: 'The best mobile SSH client is the one that matches your task. Termius is a strong terminal-first choice across iOS, Android and desktop, and Blink Shell is a leading terminal for iOS and iPadOS. NimoteCode is designed for developers who need to edit code and review a diff, not just run commands.'
+      },
+      {
+        question: 'Is SSH available on Android?',
+        answer: 'Yes. Android clients such as ConnectBot, Termux (with the OpenSSH package) and NimoteCode all provide SSH access from a phone or tablet.'
+      },
+      {
+        question: 'What is the difference between an SSH client and an SSH terminal?',
+        answer: 'An SSH client is the software that opens and manages the secure connection. An SSH terminal is the interface where you type commands into that connection. Many clients are terminal-first; a developer-focused client adds an editor, file browser and Git around the terminal.'
+      },
+      {
+        question: 'Can I edit remote files over SSH?',
+        answer: 'Yes. Some clients transfer files over SFTP, and others like NimoteCode open a remote file explorer and editor directly over the SSH connection, so you can edit in place without copying the project to your device.'
+      },
+      {
+        question: 'Can I use SSH for remote development?',
+        answer: 'Yes. Remote development over SSH means the project and its tooling stay on your host while you edit and run commands from another device. This is the model covered in the NimoteCode remote coding guide.'
+      },
+      {
+        question: 'Is NimoteCode an SSH client or a mobile IDE?',
+        answer: 'NimoteCode is an Android SSH client that extends into a mobile development workspace. It opens an SSH connection, then keeps the remote Explorer, code editor, terminal, Git review and AI assistance in the same project context, which is what makes it a mobile IDE rather than a terminal alone.'
+      }
+    ],
+    '/android-ssh-client': [
+      {
+        question: 'Is NimoteCode a good SSH client for Android?',
+        answer: 'NimoteCode is an Android SSH client for developers who need more than a shell. It opens an SSH connection and then keeps the remote Explorer, code editor, terminal, Git review and AI assistance in the same workspace, so an Android device can support a real development loop.'
+      },
+      {
+        question: 'What can you do with an Android SSH client?',
+        answer: 'A basic Android SSH client lets you connect to a remote host and run terminal commands. A developer-oriented client such as NimoteCode also lets you browse remote files, edit code, run tests, review Git changes and use AI assistance without leaving the app.'
+      },
+      {
+        question: 'Does NimoteCode support SFTP or file transfer?',
+        answer: 'NimoteCode provides a remote Explorer with SFTP-oriented file workflows, so you can browse and manage files on the connected host. The project stays on the remote machine and is read and edited over the connection.'
+      },
+      {
+        question: 'Can I edit code over SSH on Android?',
+        answer: 'Yes. NimoteCode opens remote files in its editor over the SSH connection, with tabs, project search and split panes on larger screens, so you can edit on the device without copying the project locally.'
+      },
+      {
+        question: 'Is the Android SSH client free?',
+        answer: 'NimoteCode has a free tier that includes local and SSH workspaces, the editor, baseline terminal, Git status and diff review, AI Chat with your own provider, and terminal-backed Tasks. AI Agent, remote search, multiple terminal sessions, Git write workflows, LSP and debugging are Pro workflows.'
+      },
+      {
+        question: 'Does NimoteCode work with Git over SSH?',
+        answer: 'Yes. Source Control gives you repository status, diffs, history and branches next to the remote workspace. Review is available to all users; write workflows such as commits and pushes require Pro.'
+      },
+      {
+        question: 'Is there an iOS version?',
+        answer: 'NimoteCode is currently available for Android. The public iOS App Store release is being prepared; check the download page for current availability.'
       }
     ],
     '/mobile-ai-coding': [
@@ -742,7 +811,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'All Guides', link: '/blog/' },
-                { text: 'The Best Mobile IDEs in 2026: What to Look For', link: '/blog/best-mobile-ides' },
+                { text: 'Best SSH Clients in 2026: Android, Mobile & Desktop Compared', link: '/blog/best-ssh-clients' },
                 { text: 'How to Use Android as a Remote IDE with Tailscale and NimoteCode: Free SSH Access to Mac and Linux', link: '/blog/tailscale-ssh-android-mac-linux' }
               ]
             },

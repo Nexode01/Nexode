@@ -44,7 +44,13 @@ AI didn't reduce the need for developers. It changed what developers spend time 
 
 This is the origin story behind why the editor, SSH, terminal and Git had to be built as one system. Read [Why Existing Flutter Code Editors Broke Down](/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide) and [Why I Decided to Build a Mobile IDE Instead of Another AI App](/blog/why-i-decided-to-build-a-mobile-ide-instead-of-another-ai-app). For the product overview, see [NimoteCode Features](/features) and [Mobile IDE](/mobile-ide).
 
+## Related content
+
+- [Mobile IDE overview](/mobile-ide) — the workspace this build story produced
+- [Why Existing Flutter Code Editors Broke Down](/blog/why-existing-flutter-code-editors-broke-down-when-i-built-a-mobile-ide) — the editor rebuild behind it
+- [NimoteCode Features](/features) — SSH, terminal, Git, LSP and debugging today
+
 <div class="seo-cta">
-  <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/nimotecode">X</a>.</p>
-  <p class="seo-cta-actions"><a href="/features?utm_source=blog&utm_medium=organic&utm_campaign=90percent_ai_features" class="home-page-btn secondary">Explore Features</a><a href="https://github.com/mobiledevloperlab" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Follow on GitHub</a></p>
+  <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/mobiledevlab">X</a>.</p>
+  <p class="seo-cta-actions"><a href="/download?utm_source=blog&utm_medium=organic&utm_campaign=90percent_ai_download" class="home-page-btn primary">Download NimoteCode</a><a href="/docs/quick-start?utm_source=blog&utm_medium=organic&utm_campaign=90percent_ai_quickstart" class="home-page-btn secondary">Read the Quick Start</a></p>
 </div>

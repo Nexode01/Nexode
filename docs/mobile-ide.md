@@ -26,7 +26,7 @@ NimoteCode is a **Mobile AI Development Workspace** for that loop. The Android r
 | Ship carefully | View a raw diff elsewhere | Review Git changes next to the edited code |
 | Get help | Paste snippets into a separate AI chat | Use AI Chat or AI Agent with workspace context |
 
-The goal is not to replace a desktop for every long coding session. It is to make the moments when you only have a phone or tablet genuinely productive: an on-call investigation, a small production fix, a review while travelling, or an AI-assisted follow-up to work already in progress.
+The goal is not to replace a desktop for every long coding session. It is to make the moments when you only have a phone or tablet productive: an on-call investigation, a small production fix, a review while travelling, or an AI-assisted follow-up to work already in progress.
 
 ## A complete workflow, without app hopping
 
@@ -39,6 +39,10 @@ When a task needs more context, [AI Chat and Agent](/docs/ai) can explain code o
 Good mobile development is not desktop UI squeezed onto a small screen. NimoteCode is designed around touch, mobile keyboards, focused panels and reconnect-aware remote work. The current release also makes long sessions steadier with more resilient SSH handling, bounded preview resources, and more reliable mobile terminal input. On a tablet, the larger display gives you more room for split editing, project navigation and terminal output; on a phone, the same workspace stays focused on the next action.
 
 For feature details, see [Features](/features). For a concrete production scenario, see [Remote Hotfix from Mobile](/use-cases/remote-hotfix). For setup instructions, start with [Quick Start](/docs/quick-start).
+
+## Where the desktop still wins
+
+A mobile IDE is a complement, not a full replacement. Long, uninterrupted feature work, heavy local compilation, extensive multi-file refactors and multi-monitor debugging remain better on a desktop. On a phone, focus narrows naturally to the next concrete step: inspect, edit, verify, review. That division of labour is why remote development over SSH — reusing the computing power you already have — is usually the productive path instead of trying to compile large projects locally on a phone.
 
 ## Frequently asked questions
 
@@ -68,3 +72,4 @@ NimoteCode is currently available for Android. The public iOS App Store release 
 - [SSH IDE for remote development](/ssh-ide)
 - [Mobile AI coding](/mobile-ai-coding)
 - [iPad coding workspace](/ipad-coding)
+- [The Best Mobile IDEs in 2026](/blog/best-mobile-ides)

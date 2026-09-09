@@ -116,7 +116,7 @@
   font-size: 0.86em;
   border: 1px solid var(--nimote-border);
   background: var(--nimote-bg-subtle);
-  border-radius: 8px;
+  border-radius: var(--nimote-radius-sm);
   padding: 0.15em 0.5em;
   font-weight: 500;
   color: var(--nimote-text-primary);
@@ -308,12 +308,12 @@
 .vp-doc .seo-cta {
   margin: 40px 0;
   padding: 24px;
-  border: 1px solid var(--nimote-border-accent);
+  border: 1px solid var(--nimote-border);
   border-radius: var(--nimote-radius-lg);
   background:
-    radial-gradient(circle at top right, rgba(var(--nimote-accent-rgb), 0.12), transparent 46%),
+    radial-gradient(circle at top right, rgba(var(--nimote-accent-rgb), 0.08), transparent 46%),
     var(--nimote-bg-subtle);
-  box-shadow: var(--nimote-panel-shadow);
+  box-shadow: var(--nimote-shadow-xs);
 }
 
 .vp-doc .seo-cta > p:last-child {
@@ -340,11 +340,10 @@
   gap: 10px;
   margin: 28px 0 36px;
   padding: 28px;
-  border: 1px dashed var(--nimote-border-accent);
+  border: 1px dashed var(--nimote-border);
   border-radius: var(--nimote-radius-lg);
   background:
-    linear-gradient(135deg, rgba(var(--nimote-accent-rgb), 0.08), transparent 58%),
-    repeating-linear-gradient(-45deg, transparent 0 14px, rgba(var(--nimote-accent-rgb), 0.025) 14px 28px),
+    linear-gradient(135deg, rgba(var(--nimote-accent-rgb), 0.05), transparent 58%),
     var(--nimote-bg-subtle);
   color: var(--nimote-text-secondary);
   text-align: center;
@@ -411,7 +410,7 @@
   box-sizing: border-box;
   object-fit: contain;
   border: 1px solid var(--nimote-border);
-  border-radius: 18px;
+  border-radius: var(--nimote-radius-md);
   box-shadow: var(--nimote-shadow-sm);
 }
 
@@ -507,7 +506,7 @@
   overflow: hidden;
   border: 1px solid var(--nimote-border);
   border-radius: var(--nimote-radius-lg);
-  box-shadow: var(--nimote-shadow-md);
+  box-shadow: var(--nimote-shadow-sm);
 }
 
 .vp-doc .seo-video-frame a::after {
@@ -544,9 +543,9 @@
   border: 1px solid var(--nimote-border);
   border-radius: var(--nimote-radius-lg);
   background:
-    radial-gradient(circle at top right, rgba(var(--nimote-accent-rgb), 0.16), transparent 42%),
+    radial-gradient(circle at top right, rgba(var(--nimote-accent-rgb), 0.1), transparent 42%),
     var(--nimote-bg-subtle);
-  box-shadow: var(--nimote-shadow-md);
+  box-shadow: var(--nimote-shadow-xs);
 }
 
 .vp-doc .agent-demo video {

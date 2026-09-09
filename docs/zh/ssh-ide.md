@@ -48,6 +48,10 @@ NimoteCode 把一条远程 SSH 连接变成一个开发工作区。它不再把�
 
 当你要从"观察"转向"行动"时选择这种方式：一次生产热修、值班排障、小规模的远程功能更新，或离开电脑后的审查。如果你只需要一个命令提示符，简单的 SSH 客户端可能就够；如果你需要负责任地修改代码，编辑器、Git 视图与 AI 上下文会带来明显差异。
 
+## 移动端 SSH IDE 的局限
+
+SSH IDE 依赖与远程主机的稳定连接。网络较差时，编辑按键与终端输出都会感受到延迟，因此连接需要支持断线重连。非常大的仓库在搜索索引就绪前浏览会更慢。最后，重活由远程主机承担——手机无法弥补服务器性能不足——而长时间的重编译循环仍更适合在桌面屏幕上完成。
+
 ## 常见问题
 
 ### 什么是 SSH IDE？
@@ -77,3 +81,4 @@ SSH IDE 在 SSH 连接之上增加项目浏览、代码编辑、终端命令与 
 - [Android SSH 客户端](/zh/android-ssh-client)
 - [iPhone SSH 客户端](/zh/iphone-ssh-client)
 - [移动端值班排障](/zh/use-cases/on-call-diagnostics)
+- [如何用 Tailscale 把 Android 用作远程 IDE](/zh/blog/tailscale-ssh-android-mac-linux)

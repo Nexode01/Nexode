@@ -3,6 +3,4 @@ merge.sh
 merged_docs.md
 docs/.vitepress/cache
 docs/.vitepress/dist
-.qwen
-.nimote
-.serena
+opencode.json

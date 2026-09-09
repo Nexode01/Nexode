@@ -30,7 +30,7 @@
   margin-top: auto;
   border-top: 1px solid var(--nimote-border);
   background:
-    radial-gradient(circle at 10% 0%, rgba(var(--nimote-accent-rgb), 0.08), transparent 24%),
+    radial-gradient(circle at 10% 0%, rgba(var(--nimote-accent-rgb), 0.05), transparent 24%),
     var(--nimote-bg-elevated);
 }
 
@@ -67,7 +67,7 @@
 }
 
 .nimote-footer-logo img {
-  border-radius: 12px;
+  border-radius: var(--nimote-radius-sm);
   box-shadow: var(--nimote-shadow-xs);
 }
 

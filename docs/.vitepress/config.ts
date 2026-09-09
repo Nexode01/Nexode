@@ -109,7 +109,7 @@ function pageSchemas(context: TransformContext): object[] {
       logo: brandLogo,
       sameAs: [
         'https://github.com/mobiledevloperlab',
-        'https://x.com/nimotecode'
+        'https://x.com/mobiledevlab'
       ]
     },
     {
@@ -377,6 +377,188 @@ function faqSchema(context: TransformContext): object | null {
         question: 'Does AI replace Git review?',
         answer: 'No. AI can help explain, plan and assist a task; Git review and appropriate test or verification commands remain part of the delivery workflow.'
       }
+    ],
+    '/zh/mobile-ide': [
+      {
+        question: 'NimoteCode 只是 SSH 客户端吗？',
+        answer: '不是。NimoteCode 把编辑器、Explorer、SSH、终端、Git 与 AI Agent 结合在同一个移动开发工作区中。'
+      },
+      {
+        question: '能用手机或平板处理远程项目吗？',
+        answer: '可以。通过 SSH 连接远程项目，在同一个工作区中检查文件、编辑代码、运行终端命令并审查 Git 改动。'
+      },
+      {
+        question: 'NimoteCode 支持 Android 和 iOS 吗？',
+        answer: 'NimoteCode 目前提供 Android 版。公开的 iOS App Store 版本正在准备中，请查看下载页确认当前可用性。'
+      }
+    ],
+    '/zh/ssh-ide': [
+      {
+        question: '什么是 SSH IDE？',
+        answer: 'SSH IDE 在 SSH 连接之上加入项目浏览、代码编辑、终端命令与 Git 审查，让你可以处理远程代码库，而不仅是运行 Shell 命令。'
+      },
+      {
+        question: '通过 SSH 编辑后能审查 Git 改动吗？',
+        answer: '可以。NimoteCode 会把源代码管理与远程工作区放在一起，发布改动前可查看 diff 并使用受支持的 Git 工作流。'
+      },
+      {
+        question: '什么时候 SSH IDE 比纯终端客户端更好？',
+        answer: '当任务包含定位文件、编辑代码、运行验证命令与审查 diff 时，选择 SSH IDE。纯命令类工作用终端客户端也许就够了。'
+      }
+    ],
+    '/zh/mobile-ai-coding': [
+      {
+        question: '移动 AI 编程和独立 AI 聊天有何不同？',
+        answer: 'NimoteCode 把 AI Chat 与 Agent 放在编辑器、项目 Explorer、SSH 终端和 Git 上下文旁边，因此建议可以在真实工作区中被检查和验证。'
+      },
+      {
+        question: 'AI Agent 能在远程工作区中改动吗？',
+        answer: 'AI Agent 可以协助多步骤任务，但远程与接近生产的改动应在开启命令与变更控制的情况下审查后执行。'
+      },
+      {
+        question: 'AI 会取代 Git 审查吗？',
+        answer: '不会。AI 帮助解释、规划与协助任务，而 Git 审查与适当的测试或验证命令仍然是交付流程的一部分。'
+      }
+    ],
+    '/claude-code-from-phone': [
+      {
+        question: 'Do I need NimoteCode to use Claude Code on my phone?',
+        answer: 'No. NimoteCode is a mobile workspace that keeps the surrounding project work connected over SSH — Explorer, editor, terminal and Git review — while Claude Code itself runs and authenticates on your own development host.'
+      },
+      {
+        question: 'Does NimoteCode run Claude Code for me?',
+        answer: 'No. NimoteCode is not the Claude Code product and does not replace its setup. You install and authenticate Claude Code on the remote host, then use the SSH terminal to start or continue a session.'
+      },
+      {
+        question: 'Can I run Claude Code from a phone without a remote computer?',
+        answer: 'Not with this workflow. Claude Code runs on a host you reach by SSH, so a phone connects to that host rather than running the agent locally.'
+      }
+    ],
+    '/codex-from-phone': [
+      {
+        question: 'Do I need NimoteCode to use Codex from my phone?',
+        answer: 'No. NimoteCode is the mobile workspace around a remote Codex session — Explorer, editor, SSH terminal and Git review — while Codex is installed and authenticated on your own development host.'
+      },
+      {
+        question: 'Is Codex an official partner of NimoteCode?',
+        answer: 'No. Codex is an external coding agent. NimoteCode does not claim an official partnership or that it proxies Codex; you run Codex on the remote host and work around it over SSH.'
+      },
+      {
+        question: 'Can I use an AI assistant in NimoteCode instead of Codex?',
+        answer: 'Yes. NimoteCode has its own AI Chat and Agent workflows with provider configuration, which can be used in addition to, or instead of, a remote Codex session.'
+      }
+    ],
+    '/android-ide': [
+      {
+        question: 'Can you do real development on an Android phone or tablet?',
+        answer: 'Yes, for a focused set of tasks. With an Android IDE like NimoteCode you can connect over SSH to a development machine, browse the project, edit files, run terminal commands, review Git changes and use AI assistance — especially for fixes, reviews and small features.'
+      },
+      {
+        question: 'Is NimoteCode available on iOS too?',
+        answer: 'NimoteCode is currently available for Android. The public iOS App Store release is being prepared; check the download page for current availability.'
+      },
+      {
+        question: 'Can Android run heavy local builds or full IDEs?',
+        answer: 'Not the same way a desktop does. Long local compilation and large multi-file refactors are better on a desktop; on Android, remote development over SSH to your existing machine is usually the productive path.'
+      }
+    ],
+    '/remote-coding': [
+      {
+        question: 'What does remote coding mean in practice?',
+        answer: 'Remote coding means editing and running the project on one machine while you interact from another. The most common setup is a phone or tablet connecting over SSH to your desktop, laptop or server and working in the real repository.'
+      },
+      {
+        question: 'Is remote coding over SSH slow?',
+        answer: 'Interactive editing over SSH is generally responsive on a good connection. Heavy operations — large builds, full reindexing, or long-running compiles — are subject to your network and the remote host, and are often better left to the desktop.'
+      },
+      {
+        question: 'Do I need the project files on my phone?',
+        answer: 'No. With an SSH workspace the project stays on the remote host. Your phone streams file edits, terminal output and Git data from that machine instead of duplicating the repository.'
+      }
+    ],
+    '/code-from-phone': [
+      {
+        question: 'Is it realistic to code from a phone?',
+        answer: 'Yes for focused work: investigating an issue, making a small fix, running commands, reviewing a diff or driving an AI agent on your existing project. Long-form feature work and heavy compilation remain more comfortable on a desktop.'
+      },
+      {
+        question: 'How do I actually code from a phone?',
+        answer: 'The reliable pattern is to connect to your own development machine over SSH with a mobile development workspace, then browse, edit, run and review the real project — instead of copying files or snippets between apps.'
+      },
+      {
+        question: 'Which phones can run NimoteCode?',
+        answer: 'NimoteCode is available for Android phones and tablets from the current Android release. Check the download page for platform requirements and iOS status.'
+      }
+    ],
+    '/zh/claude-code-from-phone': [
+      {
+        question: '用手机使用 Claude Code 需要 NimoteCode 吗？',
+        answer: '不需要。NimoteCode 是通过 SSH 把周边项目工作连接起来的移动工作区——Explorer、编辑器、终端与 Git 审查——而 Claude Code 本身在你自己的开发主机上运行并完成认证。'
+      },
+      {
+        question: 'NimoteCode 会替我运行 Claude Code 吗？',
+        answer: '不会。NimoteCode 不是 Claude Code 产品，也不会替代其配置。你需要自行在远程主机上安装并认证 Claude Code，然后用 SSH 终端启动或继续会话。'
+      },
+      {
+        question: '没有远程电脑能在手机上运行 Claude Code 吗？',
+        answer: '这个工作流不行。Claude Code 运行在你通过 SSH 访问的主机上，手机只是连接该主机，而不是在本地运行 Agent。'
+      }
+    ],
+    '/zh/codex-from-phone': [
+      {
+        question: '用手机使用 Codex 需要 NimoteCode 吗？',
+        answer: '不需要。NimoteCode 是远程 Codex 会话周边的移动工作区——Explorer、编辑器、SSH 终端与 Git 审查——而 Codex 在你自己的开发主机上安装并认证。'
+      },
+      {
+        question: 'Codex 是 NimoteCode 的官方合作伙伴吗？',
+        answer: '不是。Codex 是外部编码代理。NimoteCode 不声称与其有官方合作，也不代理 Codex；你在远程主机上运行 Codex，并通过 SSH 围绕它工作。'
+      },
+      {
+        question: '我可以在 NimoteCode 里用它的 AI 助手代替 Codex 吗？',
+        answer: '可以。NimoteCode 自带 AI Chat 与 Agent 工作流并支持提供商配置，既可以配合远程 Codex 会话使用，也可以单独使用。'
+      }
+    ],
+    '/zh/android-ide': [
+      {
+        question: '能在 Android 手机或平板上做真实开发吗？',
+        answer: '可以，针对一组聚焦的任务。使用像 NimoteCode 这样的 Android IDE，你可以通过 SSH 连接开发机、浏览项目、编辑文件、运行终端命令、审查 Git 改动并使用 AI 辅助——尤其是修复、审查与小功能。'
+      },
+      {
+        question: 'NimoteCode 也支持 iOS 吗？',
+        answer: 'NimoteCode 目前提供 Android 版。公开的 iOS App Store 版本正在准备中，请查看下载页确认当前可用性。'
+      },
+      {
+        question: 'Android 能运行重型本地构建或完整 IDE 吗？',
+        answer: '和桌面不一样。长时间的本地编译与大规模跨文件重构更适合桌面；在 Android 上，通过 SSH 远程连接你现有的机器通常是更高效的选择。'
+      }
+    ],
+    '/zh/remote-coding': [
+      {
+        question: '远程编程在实践中意味着什么？',
+        answer: '远程编程意味着在一台机器上编辑和运行项目，从另一台机器操作。最常见的是手机或平板通过 SSH 连接你的桌面、笔记本或服务器，在真实仓库中工作。'
+      },
+      {
+        question: '通过 SSH 远程编程会卡吗？',
+        answer: '在良好的连接下，SSH 上的交互式编辑通常很流畅。重型操作——大构建、全量重建索引或长时间编译——受网络与远程主机影响，通常更适合留给桌面。'
+      },
+      {
+        question: '手机上需要项目文件吗？',
+        answer: '不需要。使用 SSH 工作区时，项目保留在远程主机上。你的手机从该机器流式获取文件编辑、终端输出与 Git 数据，而不是复制一份仓库。'
+      }
+    ],
+    '/zh/code-from-phone': [
+      {
+        question: '用手机写代码现实吗？',
+        answer: '对聚焦的工作是现实的：排查问题、做一处小修复、运行命令、审查 diff，或在你的现有项目上驱动 AI Agent。长篇功能开发与重型编译仍然更适合桌面。'
+      },
+      {
+        question: '我到底该怎么用手机写代码？',
+        answer: '可靠的模式是用一个移动开发工作区通过 SSH 连接你自己的开发机，然后浏览、编辑、运行并审查真实项目——而不是在应用之间复制文件或代码片段。'
+      },
+      {
+        question: '哪些手机可以运行 NimoteCode？',
+        answer: 'NimoteCode 从当前 Android 版本起支持 Android 手机与平板。请查看下载页了解平台要求与 iOS 状态。'
+      }
     ]
   }
 
@@ -508,7 +690,7 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/mobiledevloperlab' },
-      { icon: 'twitter', link: 'https://x.com/nimotecode' },
+      { icon: 'twitter', link: 'https://x.com/mobiledevlab' },
       { icon: 'discord', link: 'https://discord.gg/tTxbpqYmhR' }
     ],
     editLink: {
@@ -536,6 +718,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: 'All Guides', link: '/blog/' },
+                { text: 'The Best Mobile IDEs in 2026: What to Look For', link: '/blog/best-mobile-ides' },
                 { text: 'How to Use Android as a Remote IDE with Tailscale and NimoteCode: Free SSH Access to Mac and Linux', link: '/blog/tailscale-ssh-android-mac-linux' }
               ]
             },
@@ -632,6 +815,7 @@ export default defineConfig({
               collapsed: false,
               items: [
                 { text: '全部指南', link: '/zh/blog/' },
+                { text: '2026 年最好的移动 IDE：应该看什么', link: '/zh/blog/best-mobile-ides' },
                 { text: '如何使用 Android 作为远程 IDE：借助 Tailscale 和 NimoteCode 免费 SSH 访问 Mac 与 Linux', link: '/zh/blog/tailscale-ssh-android-mac-linux' }
               ]
             },

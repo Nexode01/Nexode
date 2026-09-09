@@ -44,6 +44,10 @@ AI makes mobile work more useful when it reduces the cost of context switching. 
 - Review a small change and write a clear commit message.
 - Continue an SSH-based task from a phone or tablet when a laptop is not available.
 
+## Where mobile AI coding is limited
+
+AI on a phone does not change the engineering fundamentals. Large, cross-cutting refactors are harder to reason about on a small screen, and long agent runs still benefit from a desktop viewport. AI suggestions must be verified against the real project — an LLM cannot see your running service. And for remote, production-adjacent work you should keep command and change confirmations on. Use mobile AI coding for narrow, well-scoped tasks; keep the big design work on a desktop.
+
 ## Frequently asked questions
 
 ### How is mobile AI coding different from a standalone AI chat?
@@ -73,3 +77,4 @@ No. AI can help explain, plan and assist a task; Git review and appropriate test
 - [Codex from phone](/codex-from-phone)
 - [AI Agent workflows](/use-cases/ai-agent)
 - [Mobile IDE overview](/mobile-ide)
+- [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone)

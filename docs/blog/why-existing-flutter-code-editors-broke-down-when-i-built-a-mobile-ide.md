@@ -83,7 +83,13 @@ I didn't replace a code editor. I replaced the assumption that a code editor is 
 
 These decisions shape how the pieces work together—see the [Editor](/docs/editor), [LSP](/docs/lsp), [Source Control](/docs/source-control) and [SSH Workspace](/docs/ssh) guides. For the broader picture, read [I Built a Mobile IDE With ~90% AI-Generated Code](/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months) and [SSH + Mobile Coding Is Still Broken](/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide).
 
+## Related content
+
+- [Mobile IDE overview](/mobile-ide) — the editor, SSH, terminal and Git as one system
+- [I Built a Mobile IDE With ~90% AI-Generated Code](/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months) — the full build story
+- [SSH + Mobile Coding Is Still Broken](/blog/ssh-mobile-coding-is-still-broken-so-i-built-my-own-ide) — why the pieces had to be built together
+
 <div class="seo-cta">
-  <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/nimotecode">X</a>.</p>
-  <p class="seo-cta-actions"><a href="/docs/editor?utm_source=blog&utm_medium=organic&utm_campaign=flutter_editors_guide" class="home-page-btn primary">Read the Editor guide</a><a href="/changelog?utm_source=blog&utm_medium=organic&utm_campaign=flutter_editors_updates" class="home-page-btn secondary">See what’s new</a></p>
+  <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/mobiledevlab">X</a>.</p>
+  <p class="seo-cta-actions"><a href="/download?utm_source=blog&utm_medium=organic&utm_campaign=flutter_editors_download" class="home-page-btn primary">Download NimoteCode</a><a href="/docs/quick-start?utm_source=blog&utm_medium=organic&utm_campaign=flutter_editors_quickstart" class="home-page-btn secondary">Read the Quick Start</a></p>
 </div>

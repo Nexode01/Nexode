@@ -37,6 +37,24 @@ Agent 能加速一个范围很窄的任务，但不能消除理解环境的必�
 
 NimoteCode 自身的 AI 提供商配置见 [AI Chat 与 Agent](/zh/docs/ai)。更宏观的指南见[移动 AI 编程](/zh/mobile-ai-coding)。
 
+## 该工作流的局限
+
+这个方案假设 Claude Code 已经运行在你可通过 SSH 访问的主机上，手机连接的是该主机，而不是在本地运行 Agent。它依赖远程开发一贯的条件：可达的主机、稳定的连接，以及你自己的 Claude Code 凭据。长时间运行的 Agent 会话仍更适合在桌面监管；在手机上，请保持闭环短而聚焦。NimoteCode 不是 Claude Code，也无法修复 Claude Code 自身配置上的问题。
+
+## 常见问题
+
+### 用手机使用 Claude Code 需要 NimoteCode 吗？
+
+不需要。NimoteCode 是一个通过 SSH 把周边项目工作连接起来的移动工作区——Explorer、编辑器、终端与 Git 审查——而 Claude Code 本身在你自己的开发主机上运行并完成认证。
+
+### NimoteCode 会替我运行 Claude Code 吗？
+
+不会。NimoteCode 不是 Claude Code 产品，也不会替代其配置。你需要自行在远程主机上安装并认证 Claude Code，然后用 SSH 终端启动或继续会话。
+
+### 没有远程电脑能在手机上运行 Claude Code 吗？
+
+这个工作流不行。Claude Code 运行在你通过 SSH 访问的主机上，手机只是连接该主机，而不是在本地运行 Agent。
+
 <div class="seo-cta">
   <p><strong>把 SSH 项目、终端与审查工作流带到手机上。</strong></p>
   <p class="seo-cta-actions">
@@ -51,3 +69,4 @@ NimoteCode 自身的 AI 提供商配置见 [AI Chat 与 Agent](/zh/docs/ai)。�
 - [用手机使用 Codex](/zh/codex-from-phone)
 - [面向远程开发的 SSH IDE](/zh/ssh-ide)
 - [AI Agent 工作流](/zh/use-cases/ai-agent)
+- [AI Agent 真的能在手机上编程吗？](/zh/blog/can-an-ai-agent-really-code-from-a-phone)

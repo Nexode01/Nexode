@@ -85,7 +85,13 @@ An agent is not a system that "thinks better". It is a system that optimizes und
 
 In practice this is exactly why agent workflows need guardrails: a controlled multi-step agent can inspect files, run commands and propose changes, but it still needs boundaries and review. See how that plays out in a real workspace in [AI Agent Workflows](/use-cases/ai-agent) and the [AI Chat & Agent](/docs/ai) guide, and read a live demo in [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone). For the wider product view, start with [Mobile AI Coding](/mobile-ai-coding).
 
+## Related content
+
+- [Mobile AI coding workspace](/mobile-ai-coding) — guardrails and review in a real mobile workspace
+- [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone) — a live agent demo over SSH
+- [AI Agent Workflows](/use-cases/ai-agent) — inspect, plan, execute and verify on mobile
+
 <div class="seo-cta">
-  <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/nimotecode">X</a>.</p>
-  <p class="seo-cta-actions"><a href="/docs/ai?utm_source=blog&utm_medium=organic&utm_campaign=agent_design_guide" class="home-page-btn secondary">Read the Agent guide</a><a href="https://x.com/nimotecode" class="home-page-btn tertiary" target="_blank" rel="noreferrer">Follow on X</a></p>
+  <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/mobiledevlab">X</a>.</p>
+  <p class="seo-cta-actions"><a href="/download?utm_source=blog&utm_medium=organic&utm_campaign=agent_design_download" class="home-page-btn primary">Download NimoteCode</a><a href="/mobile-ai-coding?utm_source=blog&utm_medium=organic&utm_campaign=agent_design_workflow" class="home-page-btn secondary">Explore Mobile AI Coding</a></p>
 </div>

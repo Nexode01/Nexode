@@ -34,7 +34,10 @@ const copy = computed(() => isChinese.value ? {
   note: '为开发者的移动时刻而构建。',
   exploreLinks: [
     { text: '移动 IDE', href: '/mobile-ide' },
+    { text: 'Android IDE', href: '/android-ide' },
     { text: 'SSH IDE', href: '/ssh-ide' },
+    { text: '远程编程', href: '/remote-coding' },
+    { text: '用手机写代码', href: '/code-from-phone' },
     { text: '移动 AI 编程', href: '/mobile-ai-coding' },
     { text: '使用指南', href: '/blog/' },
     { text: '观看演示', href: '/demo?utm_source=footer&utm_medium=website&utm_campaign=demo' }
@@ -62,7 +65,10 @@ const copy = computed(() => isChinese.value ? {
   note: 'Built for developers on the move.',
   exploreLinks: [
     { text: 'Mobile IDE', href: '/mobile-ide' },
+    { text: 'Android IDE', href: '/android-ide' },
     { text: 'SSH IDE', href: '/ssh-ide' },
+    { text: 'Remote Coding', href: '/remote-coding' },
+    { text: 'Code from a Phone', href: '/code-from-phone' },
     { text: 'Mobile AI Coding', href: '/mobile-ai-coding' },
     { text: 'Guides', href: '/blog/' },
     { text: 'Watch demo', href: '/demo?utm_source=footer&utm_medium=website&utm_campaign=demo' }
@@ -102,7 +108,7 @@ function localized(path: string) {
         <nav :aria-label="copy.social">
           <h2>{{ copy.social }}</h2>
           <a href="https://www.youtube.com/watch?v=gW2wFNIBNws" target="_blank" rel="noreferrer">{{ copy.youtube }}</a>
-          <a href="https://x.com/nimotecode" target="_blank" rel="noreferrer">{{ copy.x }}</a>
+          <a href="https://x.com/mobiledevlab" target="_blank" rel="noreferrer">{{ copy.x }}</a>
           <a href="https://github.com/mobiledevloperlab" target="_blank" rel="noreferrer">{{ copy.github }}</a>
           <a :href="localized('/blog/')">{{ copy.guides }}</a>
           <a :href="localized('/changelog')">{{ copy.changelog }}</a>

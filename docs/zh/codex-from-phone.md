@@ -33,6 +33,24 @@ NimoteCode 也支持为其应用内 AI Chat 与 Agent 工作流配置 AI 提供�
 
 在手机上，速度来自减少上下文切换，而不是跳过安全措施。优先每次一个清晰目标，接受修改前先读文件，运行最小且合适的验证命令，并检查 Git diff。无论 Codex 在协助功能、重构还是事故响应，这套模式都适用。
 
+## 该工作流的局限
+
+Codex 必须已经在你可通过 SSH 访问的主机上配置好；手机不会在本地运行 Codex。这意味着工作流受你的网络、主机配置与 Codex 账户限制影响。长时间或探索性的 Agent 会话更适合在桌面监管，所以在手机上请让每次运行保持窄小且可观察。NimoteCode 是独立的移动工作区——它不代理 Codex，Codex 自身的配置与安全控制仍然适用。
+
+## 常见问题
+
+### 用手机使用 Codex 需要 NimoteCode 吗？
+
+不需要。NimoteCode 是远程 Codex 会话周边的移动工作区——Explorer、编辑器、SSH 终端与 Git 审查——而 Codex 在你自己的开发主机上安装并认证。
+
+### Codex 是 NimoteCode 的官方合作伙伴吗？
+
+不是。Codex 是外部编码代理。NimoteCode 不声称与其有官方合作，也不代理 Codex；你在远程主机上运行 Codex，并通过 SSH 围绕它工作。
+
+### 我可以在 NimoteCode 里用它的 AI 助手代替 Codex 吗？
+
+可以。NimoteCode 自带 AI Chat 与 Agent 工作流并支持提供商配置，既可以配合远程 Codex 会话使用，也可以单独使用。
+
 <div class="seo-cta">
   <p><strong>远程使用 Codex 时，把项目、命令输出与 Git 审查带在身边。</strong></p>
   <p class="seo-cta-actions">
@@ -47,3 +65,4 @@ NimoteCode 也支持为其应用内 AI Chat 与 Agent 工作流配置 AI 提供�
 - [移动 AI 编程工作区](/zh/mobile-ai-coding)
 - [用手机使用 Claude Code](/zh/claude-code-from-phone)
 - [远程热修工作流](/zh/use-cases/remote-hotfix)
+- [AI Agent 真的能在手机上编程吗？](/zh/blog/can-an-ai-agent-really-code-from-a-phone)

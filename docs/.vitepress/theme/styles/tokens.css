@@ -47,12 +47,14 @@
   --nimote-section-space: 96px;
   --nimote-section-space-compact: 64px;
 
-  /* Radii */
-  --nimote-radius-sm: 6px;
-  --nimote-radius-md: 12px;
-  --nimote-radius-lg: 14px;
-  --nimote-radius-xl: 16px;
-  --nimote-radius-2xl: 20px;
+  /* Radii — one deliberate 4-tier system.
+     Small (8px) for buttons/inputs/nav items, Card (16px) for surfaces,
+     Large (24px) for media & conversion blocks, Pill (9999px) for labels. */
+  --nimote-radius-sm: 8px;
+  --nimote-radius-md: 16px;
+  --nimote-radius-lg: 24px;
+  --nimote-radius-xl: 24px;
+  --nimote-radius-2xl: 24px;
   --nimote-radius-pill: 9999px;
 
   /* Accent */
@@ -83,12 +85,12 @@
   --surface-2: #f7f8f8;
   --text-muted: #6d727a;
 
-  /* Ambient Hero + body glow (very restrained, violet family) */
+  /* Ambient Hero + body glow — restrained violet wash, mostly neutral */
   --hero-ambient:
-    radial-gradient(ellipse 46% 52% at 74% 32%, rgba(124, 58, 237, 0.13), transparent 62%),
-    radial-gradient(ellipse 58% 58% at 88% 64%, rgba(217, 70, 239, 0.09), transparent 66%);
+    radial-gradient(ellipse 46% 52% at 74% 32%, rgba(124, 58, 237, 0.07), transparent 62%),
+    radial-gradient(ellipse 58% 58% at 88% 64%, rgba(217, 70, 239, 0.05), transparent 66%);
   --body-ambient:
-    radial-gradient(ellipse 60% 42% at 18% -6%, rgba(124, 58, 237, 0.05), transparent 64%);
+    radial-gradient(ellipse 60% 42% at 18% -6%, rgba(124, 58, 237, 0.03), transparent 64%);
 
   /* Surfaces — Light */
   --nimote-bg: #f7f8f8;
@@ -104,7 +106,7 @@
 
   /* Text — Light */
   --nimote-text-primary: #08090a;
-  --nimote-text-secondary: #62666d;
+  --nimote-text-secondary: #5d6168;
   --nimote-text-muted: #6d727a;
   --nimote-text-inverse: #ffffff;
 
@@ -113,28 +115,28 @@
   --nimote-border-strong: rgba(35, 37, 42, 0.18);
   --nimote-border-accent: rgba(217, 70, 239, 0.32);
 
-  /* Shadows — Light */
+  /* Shadows — Light (quiet, depth via surface separation not glow) */
   --nimote-shadow-xs: 0 1px 2px rgba(8, 9, 10, 0.04);
   --nimote-shadow-sm: 0 2px 4px rgba(8, 9, 10, 0.08);
   --nimote-shadow-md: 0 12px 28px rgba(8, 9, 10, 0.08);
   --nimote-shadow-lg: 0 18px 48px rgba(8, 9, 10, 0.12);
   --nimote-shadow-xl: 0 32px 84px rgba(8, 9, 10, 0.16);
-  --nimote-shadow-brand: 0 18px 48px rgba(217, 70, 239, 0.18);
-  --nimote-shadow-gold: 0 18px 48px rgba(217, 70, 239, 0.14);
+  --nimote-shadow-brand: 0 8px 24px rgba(217, 70, 239, 0.14);
+  --nimote-shadow-gold: 0 8px 24px rgba(217, 70, 239, 0.1);
 
-  /* Gradients — Light */
+  /* Gradients — Light (accent reserved for interactive moments) */
   --nimote-gradient: linear-gradient(180deg, #f0abfc 0%, #d946ef 100%);
-  --nimote-gradient-soft: linear-gradient(135deg, rgba(217, 70, 239, 0.1), rgba(94, 106, 210, 0.08));
+  --nimote-gradient-soft: linear-gradient(135deg, rgba(217, 70, 239, 0.08), rgba(94, 106, 210, 0.05));
   --nimote-gradient-vivid: linear-gradient(135deg, #e879f9 0%, #d946ef 48%, #5e6ad2 100%);
   --nimote-gradient-gold: linear-gradient(180deg, #f0abfc 0%, #d946ef 100%);
   --nimote-gradient-bg:
-    radial-gradient(ellipse 70% 46% at 50% -12%, rgba(217, 70, 239, 0.14) 0%, transparent 72%),
-    radial-gradient(ellipse 54% 36% at 80% 8%, rgba(94, 106, 210, 0.1) 0%, transparent 70%);
+    radial-gradient(ellipse 70% 46% at 50% -12%, rgba(217, 70, 239, 0.05) 0%, transparent 72%),
+    radial-gradient(ellipse 54% 36% at 80% 8%, rgba(94, 106, 210, 0.04) 0%, transparent 70%);
 
   /* Mode-specific visual helpers */
   --nimote-inset-highlight: rgba(255, 255, 255, 0.8);
-  --nimote-panel-shadow: 0 2px 4px rgba(8, 9, 10, 0.08);
-  --nimote-panel-shadow-hover: 0 12px 28px rgba(8, 9, 10, 0.12);
+  --nimote-panel-shadow: 0 1px 2px rgba(8, 9, 10, 0.05);
+  --nimote-panel-shadow-hover: 0 10px 24px rgba(8, 9, 10, 0.1);
   --nimote-hero-image-filter: saturate(1.04) contrast(1.08) brightness(0.92);
   /* Hero contrast presets (light theme) */
   --nimote-hero-image-filter-soft: saturate(1.02) contrast(1.05) brightness(0.96);
@@ -162,7 +164,6 @@
      --nimote-hero-image-filter: var(--nimote-hero-image-filter-strong);
      for stronger contrast separation. */
   --nimote-video-shell-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(240, 241, 242, 0.96)), var(--nimote-bg-elevated);
-  --nimote-video-overlay: linear-gradient(180deg, rgba(8, 9, 10, 0), rgba(8, 9, 10, 0.74));
   --nimote-grid-line: rgba(8, 9, 10, 0.04);
 
   /* Motion */
@@ -204,17 +205,17 @@
   --text-muted: #8a8f98;
 
   --hero-ambient:
-    radial-gradient(ellipse 46% 52% at 74% 32%, rgba(139, 92, 246, 0.2), transparent 62%),
-    radial-gradient(ellipse 58% 58% at 88% 64%, rgba(217, 70, 239, 0.14), transparent 66%);
+    radial-gradient(ellipse 46% 52% at 74% 32%, rgba(139, 92, 246, 0.12), transparent 62%),
+    radial-gradient(ellipse 58% 58% at 88% 64%, rgba(217, 70, 239, 0.08), transparent 66%);
   --body-ambient:
-    radial-gradient(ellipse 60% 42% at 18% -6%, rgba(124, 58, 237, 0.09), transparent 64%);
+    radial-gradient(ellipse 60% 42% at 18% -6%, rgba(124, 58, 237, 0.05), transparent 64%);
 
   --nimote-bg: #08090a;
   --nimote-bg-rgb: 8, 9, 10;
-  --nimote-bg-elevated: #0f1011;
+  --nimote-bg-elevated: #101112;
   --nimote-bg-subtle: #161718;
-  --nimote-bg-muted: #23252a;
-  --nimote-card: #0f1011;
+  --nimote-bg-muted: #26282d;
+  --nimote-card: #101112;
   --nimote-card-hover: #161718;
   --nimote-nav-bg: rgba(15, 16, 17, 0.94);
   --nimote-nav-bg-scrolled: rgba(15, 16, 17, 0.98);
@@ -234,20 +235,20 @@
   --nimote-shadow-md: 0 12px 28px rgba(0, 0, 0, 0.42);
   --nimote-shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.5);
   --nimote-shadow-xl: 0 32px 84px rgba(0, 0, 0, 0.62);
-  --nimote-shadow-brand: 0 18px 48px rgba(217, 70, 239, 0.22);
-  --nimote-shadow-gold: 0 18px 48px rgba(217, 70, 239, 0.16);
+  --nimote-shadow-brand: 0 8px 24px rgba(217, 70, 239, 0.18);
+  --nimote-shadow-gold: 0 8px 24px rgba(217, 70, 239, 0.12);
 
   --nimote-gradient: linear-gradient(180deg, #f0abfc 0%, #d946ef 100%);
-  --nimote-gradient-soft: linear-gradient(135deg, rgba(217, 70, 239, 0.1), rgba(94, 106, 210, 0.06));
+  --nimote-gradient-soft: linear-gradient(135deg, rgba(217, 70, 239, 0.08), rgba(94, 106, 210, 0.05));
   --nimote-gradient-vivid: linear-gradient(135deg, #e879f9 0%, #d946ef 48%, #5e6ad2 100%);
   --nimote-gradient-gold: linear-gradient(180deg, #f0abfc 0%, #d946ef 100%);
   --nimote-gradient-bg:
-    radial-gradient(ellipse 70% 46% at 50% -12%, rgba(217, 70, 239, 0.18) 0%, transparent 72%),
-    radial-gradient(ellipse 54% 36% at 80% 8%, rgba(94, 106, 210, 0.08) 0%, transparent 70%);
+    radial-gradient(ellipse 70% 46% at 50% -12%, rgba(217, 70, 239, 0.08) 0%, transparent 72%),
+    radial-gradient(ellipse 54% 36% at 80% 8%, rgba(94, 106, 210, 0.05) 0%, transparent 70%);
 
   --nimote-inset-highlight: rgba(255, 255, 255, 0.035);
-  --nimote-panel-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  --nimote-panel-shadow-hover: 0 8px 18px rgba(0, 0, 0, 0.48);
+  --nimote-panel-shadow: 0 1px 2px rgba(0, 0, 0, 0.36);
+  --nimote-panel-shadow-hover: 0 10px 20px rgba(0, 0, 0, 0.46);
   --nimote-hero-image-filter: saturate(0.84) contrast(1.06) brightness(0.66);
   --nimote-hero-overlay:
     linear-gradient(90deg, rgba(8, 9, 10, 0.94) 0%, rgba(8, 9, 10, 0.76) 34%, rgba(8, 9, 10, 0.44) 58%, rgba(8, 9, 10, 0.18) 100%),
@@ -255,7 +256,6 @@
     radial-gradient(circle at 16% 18%, rgba(217, 70, 239, 0.12), transparent 28%),
     radial-gradient(circle at 82% 14%, rgba(94, 106, 210, 0.1), transparent 24%);
   --nimote-video-shell-bg: linear-gradient(180deg, rgba(15, 16, 17, 0.94), rgba(8, 9, 10, 0.98)), var(--nimote-bg);
-  --nimote-video-overlay: linear-gradient(180deg, rgba(8, 9, 10, 0), rgba(8, 9, 10, 0.84));
   --nimote-grid-line: rgba(255, 255, 255, 0.018);
 
   color-scheme: dark;

@@ -182,11 +182,17 @@ This is the difference between having remote access and being able to complete r
 <div class="seo-cta">
   <p><strong>Connect your Tailscale machine to NimoteCode and keep your remote code, terminal and Git workflow together on Android.</strong></p>
   <p class="seo-cta-actions">
-    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=tailscale_ssh_guide" class="home-page-btn primary" target="_blank" rel="noreferrer">Download NimoteCode for Android</a>
-    <a href="/demo?utm_source=tailscale_ssh_guide&utm_medium=organic&utm_campaign=watch_demo" class="home-page-btn secondary">Watch Demo</a>
+    <a href="https://play.google.com/store/apps/details?id=com.nimote.nimotecode&utm_source=nimotecode&utm_medium=organic&utm_campaign=tailscale_ssh_guide" class="home-page-btn primary" target="_blank" rel="noreferrer">Download NimoteCode</a>
+    <a href="/docs/quick-start?utm_source=tailscale_ssh_guide&utm_medium=organic&utm_campaign=tailscale_quickstart" class="home-page-btn secondary">Read the Quick Start</a>
   </p>
 </div>
 
 ## What this setup gives you
 
 With Tailscale and NimoteCode, you can securely work from Android even when your devices are on different networks—without exposing SSH directly to the public internet or configuring router port forwarding.
+
+## Related content
+
+- [SSH IDE for remote development](/ssh-ide) — turn an SSH connection into a full development workspace
+- [Remote coding from a phone or tablet](/remote-coding) — the remote-first workflow in practice
+- [Android IDE for SSH, Git and AI Coding](/android-ide) — a real mobile IDE beyond a terminal

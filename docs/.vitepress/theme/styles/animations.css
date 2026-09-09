@@ -1,6 +1,6 @@
 /* ==========================================================================
    Animations
-   - Keyframes (fade-up, fade-in, pulse-glow, hero-zoom)
+   - Keyframes (fade-up, fade-in) — deliberate motion only
    - Initial entrance animations on .VPHero / .vp-doc
    - prefers-reduced-motion override
    ========================================================================== */
@@ -22,15 +22,6 @@
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes nimote-pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(var(--nimote-accent-rgb), 0.35);
-  }
-  50% {
-    box-shadow: 0 0 0 12px rgba(var(--nimote-accent-rgb), 0);
   }
 }
 

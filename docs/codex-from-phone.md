@@ -33,6 +33,24 @@ NimoteCode also supports AI provider configuration for its in-app AI Chat and Ag
 
 On a phone, speed comes from reducing context switching, not from skipping safeguards. Prefer one clear objective at a time, read the file before accepting an edit, run the smallest appropriate verification command and inspect the Git diff. This pattern works whether Codex is assisting a feature, a refactor or an incident response.
 
+## Limitations of this workflow
+
+Codex must already be set up on a host you can reach by SSH; a phone does not run Codex locally. That means the workflow inherits your network, host configuration and Codex account limits. Long or exploratory agent sessions are easier to supervise on a desktop, so on a phone keep each run narrow and observable. NimoteCode is an independent mobile workspace — it does not proxy Codex, and Codex's own setup and controls still apply.
+
+## Frequently asked questions
+
+### Do I need NimoteCode to use Codex from my phone?
+
+No. NimoteCode is the mobile workspace around a remote Codex session — Explorer, editor, SSH terminal and Git review — while Codex is installed and authenticated on your own development host.
+
+### Is Codex an official partner of NimoteCode?
+
+No. Codex is an external coding agent. NimoteCode does not claim an official partnership or that it proxies Codex; you run Codex on the remote host and work around it over SSH.
+
+### Can I use an AI assistant in NimoteCode instead of Codex?
+
+Yes. NimoteCode has its own AI Chat and Agent workflows with provider configuration, which can be used in addition to, or instead of, a remote Codex session.
+
 <div class="seo-cta">
   <p><strong>Keep the project, command output and Git review with you when you use Codex remotely.</strong></p>
   <p class="seo-cta-actions">
@@ -47,3 +65,4 @@ On a phone, speed comes from reducing context switching, not from skipping safeg
 - [Mobile AI coding workspace](/mobile-ai-coding)
 - [Claude Code from phone](/claude-code-from-phone)
 - [Remote hotfix workflow](/use-cases/remote-hotfix)
+- [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone)

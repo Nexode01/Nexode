@@ -86,7 +86,13 @@ The decision to build a mobile IDE was not really about development tools. It wa
 
 NimoteCode is my attempt at that. See how the pieces fit in [Mobile IDE](/mobile-ide), [Mobile AI Coding](/mobile-ai-coding) and [NimoteCode Features](/features), and read the build story in [I Built a Mobile IDE With ~90% AI-Generated Code](/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months).
 
+## Related content
+
+- [Mobile IDE overview](/mobile-ide) — files, editor, terminal, Git and debugging in one workspace
+- [Mobile AI coding workspace](/mobile-ai-coding) — the AI-native development loop on a phone
+- [I Built a Mobile IDE With ~90% AI-Generated Code](/blog/i-built-a-mobile-ide-with-90-ai-generated-code-but-it-still-took-me-6-months) — the full build story
+
 <div class="seo-cta">
-  <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/nimotecode">X</a>.</p>
-  <p class="seo-cta-actions"><a href="/mobile-ide?utm_source=blog&utm_medium=organic&utm_campaign=why_mobile_ide_product" class="home-page-btn primary">Explore Mobile IDE</a><a href="https://www.youtube.com/watch?v=cTpxPqJwo_s" class="home-page-btn secondary" target="_blank" rel="noreferrer">Watch on YouTube</a></p>
+  <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/mobiledevlab">X</a>.</p>
+  <p class="seo-cta-actions"><a href="/download?utm_source=blog&utm_medium=organic&utm_campaign=why_mobile_ide_download" class="home-page-btn primary">Download NimoteCode</a><a href="/mobile-ide?utm_source=blog&utm_medium=organic&utm_campaign=why_mobile_ide_product" class="home-page-btn secondary">Explore Mobile AI Coding</a></p>
 </div>

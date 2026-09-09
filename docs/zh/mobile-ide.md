@@ -40,6 +40,10 @@ NimoteCode 是一个**移动 AI 开发工作台**。当前 Android 版将 Editor
 
 功能细节见[功能特性](/zh/features)。具体生产场景见[移动端远程热修](/zh/use-cases/remote-hotfix)。安装指引从[快速入门](/zh/docs/quick-start)开始。
 
+## 桌面端依然更适合的场景
+
+移动 IDE 是补充，不是完全替代。长时间不间断的功能开发、重型本地编译、跨文件的大规模重构以及多屏调试，仍然更适合在桌面完成。手机上，焦点会自然收窄到下一步具体动作：检查、编辑、验证、审查。这样的分工，正是通过 SSH 做远程开发——复用你已有的算力——通常是更高效选择的原因，而不是试图在手机上本地编译大型项目。
+
 ## 常见问题
 
 ### NimoteCode 只是 SSH 客户端吗？
@@ -68,3 +72,4 @@ NimoteCode 目前提供 Android 版；iOS 公版正在 App Store 准备中。可
 - [面向远程开发的 SSH IDE](/zh/ssh-ide)
 - [移动 AI 编程](/zh/mobile-ai-coding)
 - [iPad 编程工作区](/zh/ipad-coding)
+- [2026 年最好的移动 IDE](/zh/blog/best-mobile-ides)

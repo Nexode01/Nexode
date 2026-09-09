@@ -30,7 +30,13 @@ NimoteCode is available now on Google Play, with the App Store version coming so
 
 If you want to see how a controlled agent fits into a reviewable delivery loop, read [AI Agent Workflows](/use-cases/ai-agent) and the [AI Chat & Agent](/docs/ai) guide. For a broader look at where this approach is going, see [Mobile AI Coding](/mobile-ai-coding).
 
+## Related content
+
+- [Mobile AI coding workspace](/mobile-ai-coding) — see how agents, editor and Git share context on a phone
+- [Claude Code from phone](/claude-code-from-phone) — run a remote agent workflow on your own SSH host
+- [Agent Design Is Bounded Optimization, Not Intelligence](/blog/agent-design-is-bounded-optimization-not-intelligence) — why agents need guardrails and review
+
 <div class="seo-cta">
-  <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/nimotecode">X</a>.</p>
-  <p class="seo-cta-actions"><a href="/demo?utm_source=blog&utm_medium=organic&utm_campaign=agent_from_phone_demo" class="home-page-btn primary">Watch the Demo</a><a href="/docs/ai?utm_source=blog&utm_medium=organic&utm_campaign=agent_from_phone_guide" class="home-page-btn secondary">Read the Agent guide</a></p>
+  <p><strong>About the author</strong> · Building <a href="/">NimoteCode</a>, a mobile-first IDE built with Flutter and Rust. Follow the project on <a href="https://dev.to/ma_dev">DEV.to</a> · <a href="https://github.com/mobiledevloperlab">GitHub</a> · <a href="https://x.com/mobiledevlab">X</a>.</p>
+  <p class="seo-cta-actions"><a href="/download?utm_source=blog&utm_medium=organic&utm_campaign=agent_from_phone_download" class="home-page-btn primary">Download NimoteCode</a><a href="/mobile-ai-coding?utm_source=blog&utm_medium=organic&utm_campaign=agent_from_phone_workflow" class="home-page-btn secondary">Explore Mobile AI Coding</a></p>
 </div>

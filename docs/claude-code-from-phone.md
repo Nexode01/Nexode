@@ -37,6 +37,24 @@ An agent can accelerate a narrow task, but it cannot remove the need to understa
 
 For AI provider setup inside NimoteCode itself, see [AI Chat and Agent](/docs/ai). For broader guidance, read [Mobile AI Coding](/mobile-ai-coding).
 
+## Limitations of this workflow
+
+This setup assumes Claude Code already runs on a host you can reach by SSH, so a phone connects to that host rather than running the agent locally. It depends on the same things remote development always does: a reachable host, a stable connection and your own Claude Code credentials. Long-running agent sessions are still easier to supervise on a desktop; on a phone, prefer short, narrowly scoped loops. NimoteCode is not Claude Code and cannot fix issues inside Claude Code's own configuration.
+
+## Frequently asked questions
+
+### Do I need NimoteCode to use Claude Code on my phone?
+
+No. NimoteCode is a mobile workspace that keeps the surrounding project work connected over SSH — Explorer, editor, terminal and Git review — while Claude Code itself runs and authenticates on your own development host.
+
+### Does NimoteCode run Claude Code for me?
+
+No. NimoteCode is not the Claude Code product and does not replace its setup. You install and authenticate Claude Code on the remote host, then use the SSH terminal to start or continue a session.
+
+### Can I run Claude Code from a phone without a remote computer?
+
+Not with this workflow. Claude Code runs on a host you reach by SSH, so a phone connects to that host rather than running the agent locally.
+
 <div class="seo-cta">
   <p><strong>Bring your SSH project, terminal and review workflow to the phone.</strong></p>
   <p class="seo-cta-actions">
@@ -51,3 +69,4 @@ For AI provider setup inside NimoteCode itself, see [AI Chat and Agent](/docs/ai
 - [Codex from phone](/codex-from-phone)
 - [SSH IDE for remote development](/ssh-ide)
 - [AI Agent workflows](/use-cases/ai-agent)
+- [Can an AI Agent Really Code From a Phone?](/blog/can-an-ai-agent-really-code-from-a-phone)

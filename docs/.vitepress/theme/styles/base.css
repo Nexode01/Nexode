@@ -78,7 +78,7 @@ textarea {
   background: rgba(var(--nimote-accent-rgb), 0.35);
 }
 
-/* Scrollbar */
+/* Scrollbar — neutral, unobtrusive */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -87,13 +87,13 @@ textarea {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(var(--nimote-accent-rgb), 0.18);
+  background: rgba(128, 134, 144, 0.3);
   border-radius: var(--nimote-radius-pill);
   border: 2px solid transparent;
   background-clip: content-box;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(var(--nimote-accent-rgb), 0.32);
+  background: rgba(128, 134, 144, 0.5);
   background-clip: content-box;
 }
 

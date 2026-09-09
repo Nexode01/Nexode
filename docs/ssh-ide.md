@@ -48,6 +48,10 @@ Use [AI Chat and Agent](/docs/ai) to explain code, plan an edit or help move thr
 
 Choose this approach when you expect to move from observation to action: a production hotfix, on-call diagnostics, a small remote feature update, or a review while away from your desktop. If you only need a command prompt, a simple SSH client may be enough. If you need to change code responsibly, the editor, Git view and AI context make the difference.
 
+## Limitations of SSH IDE work on mobile
+
+An SSH IDE depends on a stable connection to the remote host. On a weak network you will feel latency in editor keystrokes and terminal output, and the connection should be reconnect-aware. Very large repositories can be slower to browse until search indexes are ready. Finally, the remote host does the heavy work — a phone cannot compensate for an underpowered server — and long, heavy compile loops are still more comfortable on a desktop screen.
+
 ## Frequently asked questions
 
 ### What is an SSH IDE?
@@ -77,3 +81,4 @@ Choose an SSH IDE when the task includes locating files, editing code, running v
 - [Android SSH client](/android-ssh-client)
 - [iPhone SSH client](/iphone-ssh-client)
 - [On-call diagnostics from mobile](/use-cases/on-call-diagnostics)
+- [How to Use Android as a Remote IDE with Tailscale](/blog/tailscale-ssh-android-mac-linux)
